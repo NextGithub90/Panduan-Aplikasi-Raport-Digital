@@ -1,0 +1,1336 @@
+- generic [active] [ref=f3e1]:
+  - button "Buka daftar isi" [ref=f3e3] [cursor=pointer]:
+    - generic [ref=f3e8]: Daftar isi
+  - banner [ref=f3e9]:
+    - navigation "Navigasi atas" [ref=f3e10]:
+      - link "RD Raport Digital Panduan Pengguna" [ref=f3e11] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=f3e12]: RD
+        - generic [ref=f3e13]: Raport DigitalPanduan Pengguna
+      - button "Cetak panduan" [ref=f3e15] [cursor=pointer]
+    - generic [ref=f3e16]:
+      - generic [ref=f3e17]:
+        - generic [ref=f3e18]: Pondok Pesantren Al-Yusriyah
+        - heading "Kelola raport dengan langkah yang jelas." [level=1] [ref=f3e19]
+        - paragraph [ref=f3e20]: Dari login Admin, memasukkan Guru dan Santri, mengisi nilai sebagai Guru, sampai mengunci dan mengunduh rapor serta kartu.
+        - generic [ref=f3e21]:
+          - link "Lihat alur kerja" [ref=f3e22] [cursor=pointer]:
+            - /url: "#alur-cepat"
+          - link "Buka panduan lengkap" [ref=f3e23] [cursor=pointer]:
+            - /url: "#panduan-lengkap"
+      - complementary [ref=f3e24]:
+        - text: Urutan utama
+        - list [ref=f3e25]:
+          - listitem [ref=f3e26]: Siapkan lembaga
+          - listitem [ref=f3e27]: Masukkan data
+          - listitem [ref=f3e28]: Isi nilai
+          - listitem [ref=f3e29]: Periksa & kunci
+          - listitem [ref=f3e30]: Unduh PDF
+        - text: Hasil pengujian produksi · 2026/2027 Ganjil
+  - main [ref=f3e31]:
+    - generic [ref=f3e32]:
+      - generic [ref=f3e33]:
+        - generic [ref=f3e34]: Alur cepat
+        - heading "Tujuh tahap dari kosong sampai rapor" [level=2] [ref=f3e35]
+        - paragraph [ref=f3e36]: Ikuti urutan ini agar menu Guru dan dokumen cetak terisi dengan benar.
+      - generic [ref=f3e37]:
+        - article [ref=f3e38]:
+          - text: "01"
+          - heading "Profil & periode" [level=3] [ref=f3e39]
+          - paragraph [ref=f3e40]: Lengkapi identitas pesantren, tahun ajaran, dan semester aktif.
+        - article [ref=f3e41]:
+          - text: "02"
+          - heading "Guru & Santri" [level=3] [ref=f3e42]
+          - paragraph [ref=f3e43]: Tambah manual atau gunakan template Excel dan periksa preview.
+        - article [ref=f3e44]:
+          - text: "03"
+          - heading "Kelas & KKM" [level=3] [ref=f3e45]
+          - paragraph [ref=f3e46]: Buat kelas, pilih wali, anggota, mata pelajaran, dan KKM.
+        - article [ref=f3e47]:
+          - text: "04"
+          - heading "Guru pengampu" [level=3] [ref=f3e48]
+          - paragraph [ref=f3e49]: Tentukan siapa yang mengisi setiap mata pelajaran.
+        - article [ref=f3e50]:
+          - text: "05"
+          - heading "Pengisian Guru" [level=3] [ref=f3e51]
+          - paragraph [ref=f3e52]: Isi nilai mapel, ekstrakurikuler, presensi, dan catatan wali.
+        - article [ref=f3e53]:
+          - text: "06"
+          - heading "Periksa & kunci" [level=3] [ref=f3e54]
+          - paragraph [ref=f3e55]: Admin memastikan semua bagian lengkap lalu mengunci kelas.
+        - article [ref=f3e56]:
+          - text: "07"
+          - heading "Unduh hasil" [level=3] [ref=f3e57]
+          - paragraph [ref=f3e58]: Pratinjau kemudian unduh rapor dan kartu dalam format PDF.
+    - generic [ref=f3e59]:
+      - generic [ref=f3e60]:
+        - generic [ref=f3e61]: Contoh nyata
+        - heading "Tampilan dari pengujian produksi" [level=2] [ref=f3e62]
+        - paragraph [ref=f3e63]: Gambar berikut diambil saat alur lengkap diuji langsung di aplikasi.
+      - generic [ref=f3e64]:
+        - figure "Dashboard Admin Titik awal untuk memantau Guru, Santri, kelas, periode, dan kelengkapan nilai." [ref=f3e65]:
+          - button "Perbesar Dashboard Admin" [ref=f3e66]:
+            - img "Dashboard Admin" [ref=f3e67]
+          - generic [ref=f3e68]:
+            - strong [ref=f3e69]: Dashboard Admin
+            - generic [ref=f3e70]: Titik awal untuk memantau Guru, Santri, kelas, periode, dan kelengkapan nilai.
+        - figure "Preview import Guru Periksa seluruh baris sebelum menyimpan hasil impor Excel." [ref=f3e71]:
+          - button "Perbesar Preview import Guru" [ref=f3e72]:
+            - img "Preview import Guru" [ref=f3e73]
+          - generic [ref=f3e74]:
+            - strong [ref=f3e75]: Preview import Guru
+            - generic [ref=f3e76]: Periksa seluruh baris sebelum menyimpan hasil impor Excel.
+        - figure "Preview import Santri Validasi NISN dan identitas Santri sebelum data dimasukkan." [ref=f3e77]:
+          - button "Perbesar Preview import Santri" [ref=f3e78]:
+            - img "Preview import Santri" [ref=f3e79]
+          - generic [ref=f3e80]:
+            - strong [ref=f3e81]: Preview import Santri
+            - generic [ref=f3e82]: Validasi NISN dan identitas Santri sebelum data dimasukkan.
+        - figure "Kelas berhasil dibuat Pastikan wali kelas dan anggota kelas sudah sesuai." [ref=f3e83]:
+          - button "Perbesar Kelas berhasil dibuat" [ref=f3e84]:
+            - img "Kelas berhasil dibuat" [ref=f3e85]
+          - generic [ref=f3e86]:
+            - strong [ref=f3e87]: Kelas berhasil dibuat
+            - generic [ref=f3e88]: Pastikan wali kelas dan anggota kelas sudah sesuai.
+        - figure "Nilai Matematika Nilai harian, UAS, rata-rata, nilai akhir, dan status tuntas dihitung otomatis." [ref=f3e89]:
+          - button "Perbesar Nilai Matematika" [ref=f3e90]:
+            - img "Nilai Matematika" [ref=f3e91]
+          - generic [ref=f3e92]:
+            - strong [ref=f3e93]: Nilai Matematika
+            - generic [ref=f3e94]: Nilai harian, UAS, rata-rata, nilai akhir, dan status tuntas dihitung otomatis.
+        - figure "Nilai Nahwu Konfigurasi bobot dapat disesuaikan per mata pelajaran." [ref=f3e95]:
+          - button "Perbesar Nilai Nahwu" [ref=f3e96]:
+            - img "Nilai Nahwu" [ref=f3e97]
+          - generic [ref=f3e98]:
+            - strong [ref=f3e99]: Nilai Nahwu
+            - generic [ref=f3e100]: Konfigurasi bobot dapat disesuaikan per mata pelajaran.
+        - figure "Nilai ekstrakurikuler Guru pembina dapat mengisi nilai A/B melalui formulir atau Excel." [ref=f3e101]:
+          - button "Perbesar Nilai ekstrakurikuler" [ref=f3e102]:
+            - img "Nilai ekstrakurikuler" [ref=f3e103]
+          - generic [ref=f3e104]:
+            - strong [ref=f3e105]: Nilai ekstrakurikuler
+            - generic [ref=f3e106]: Guru pembina dapat mengisi nilai A/B melalui formulir atau Excel.
+        - figure "Data wali kelas Lengkapi presensi, kepribadian, dan catatan sebelum penguncian." [ref=f3e107]:
+          - button "Perbesar Data wali kelas" [ref=f3e108]:
+            - img "Data wali kelas" [ref=f3e109]
+          - generic [ref=f3e110]:
+            - strong [ref=f3e111]: Data wali kelas
+            - generic [ref=f3e112]: Lengkapi presensi, kepribadian, dan catatan sebelum penguncian.
+        - figure "Status nilai Admin memeriksa kelengkapan kelas sebelum mengunci nilai." [ref=f3e113]:
+          - button "Perbesar Status nilai" [ref=f3e114]:
+            - img "Status nilai" [ref=f3e115]
+          - generic [ref=f3e116]:
+            - strong [ref=f3e117]: Status nilai
+            - generic [ref=f3e118]: Admin memeriksa kelengkapan kelas sebelum mengunci nilai.
+        - figure "Cetak rapor dan kartu Pratinjau dokumen sebelum mengunduh PDF final." [ref=f3e119]:
+          - button "Perbesar Cetak rapor dan kartu" [ref=f3e120]:
+            - img "Cetak rapor dan kartu" [ref=f3e121]
+          - generic [ref=f3e122]:
+            - strong [ref=f3e123]: Cetak rapor dan kartu
+            - generic [ref=f3e124]: Pratinjau dokumen sebelum mengunduh PDF final.
+        - figure "Backup manual Backup produksi berhasil dibuat dan dapat langsung diunduh tanpa Cron Job." [ref=f3e125]:
+          - button "Perbesar Backup manual" [ref=f3e126]:
+            - img "Backup manual" [ref=f3e127]
+          - generic [ref=f3e128]:
+            - strong [ref=f3e129]: Backup manual
+            - generic [ref=f3e130]: Backup produksi berhasil dibuat dan dapat langsung diunduh tanpa Cron Job.
+    - region [ref=f3e131]:
+      - generic [ref=f3e132]:
+        - text: Hasil akhir UAT
+        - heading "Raport dan kartu berhasil dicetak." [level=2] [ref=f3e133]
+        - paragraph [ref=f3e134]: Contoh PDF berikut berasal dari data uji produksi Ahmad Fadhil UAT. Gunakan sebagai pembanding saat melakukan pencetakan pertama.
+      - generic [ref=f3e135]:
+        - link "Buka contoh raport PDF" [ref=f3e136] [cursor=pointer]:
+          - /url: hasil-uat/raport-ahmad-fadhil-uat-produksi.pdf
+          - text: Buka contoh raport
+          - generic [ref=f3e137]: PDF
+        - link "Buka contoh kartu PDF" [ref=f3e138] [cursor=pointer]:
+          - /url: hasil-uat/kartu-ahmad-fadhil-uat-produksi.pdf
+          - text: Buka contoh kartu
+          - generic [ref=f3e139]: PDF
+    - generic [ref=f3e140]:
+      - complementary [ref=f3e141]:
+        - generic [ref=f3e142]: Cari panduan
+        - searchbox "Cari panduan" [ref=f3e143]
+      - article [ref=f3e144]:
+        - generic [ref=f3e145]:
+          - generic [ref=f3e146]: Panduan lengkap
+          - heading "Semua menu, dijelaskan dari awal sampai akhir" [level=2] [ref=f3e147]
+          - paragraph [ref=f3e148]: Gunakan kolom pencarian atau pilih bab pada daftar isi. Checklist tersimpan di browser perangkat ini.
+        - generic [ref=f3e149]:
+          - paragraph [ref=f3e150]: Panduan ini ditujukan untuk pengelola pesantren, Admin, dan Guru yang menggunakan aplikasi Raport Digital. Ikuti urutan pada panduan ini agar data akademik tersusun dengan benar sejak awal sampai raport selesai dicetak.
+          - complementary [ref=f3e151]:
+            - strong [ref=f3e152]: "Catatan:"
+            - text: Nama tombol dan menu dalam panduan ini sama dengan yang tampil di aplikasi. Tampilan pada telepon genggam mungkin lebih ringkas; tekan tombol menu di kiri atas untuk membuka navigasi.
+          - generic [ref=f3e153]:
+            - generic [ref=f3e154]: "1"
+            - heading "1. Mengenal akun Admin dan Guru" [level=2] [ref=f3e155]
+            - paragraph [ref=f3e156]: "Aplikasi memiliki dua jenis akun:"
+            - table [ref=f3e158]:
+              - rowgroup [ref=f3e159]:
+                - row [ref=f3e160]:
+                  - columnheader "Jenis akun" [ref=f3e161]
+                  - columnheader "Tugas utama" [ref=f3e162]
+              - rowgroup [ref=f3e163]:
+                - row [ref=f3e164]:
+                  - cell [ref=f3e165]:
+                    - strong [ref=f3e166]: Admin
+                  - cell "Mengatur profil pesantren, periode akademik, Guru, Santri, mata pelajaran, kelas, KKM, penugasan mengajar, penguncian nilai, pencetakan, akun Admin, dan backup." [ref=f3e167]
+                - row [ref=f3e168]:
+                  - cell [ref=f3e169]:
+                    - strong [ref=f3e170]: Guru
+                  - cell "Mengisi nilai mata pelajaran yang ditugaskan, nilai ekstrakurikuler jika menjadi pembina, data raport jika menjadi wali kelas, serta mencetak dokumen kelas yang dapat diakses." [ref=f3e171]
+            - paragraph [ref=f3e172]: Guru hanya dapat melihat kelas dan mata pelajaran yang telah diberikan oleh Admin. Guru tidak dapat membuat kelas, menambah Santri, atau menentukan penugasannya sendiri.
+          - generic [ref=f3e173]:
+            - generic [ref=f3e174]: "2"
+            - heading "2. Masuk ke aplikasi" [level=2] [ref=f3e175]
+            - heading "Login Admin" [level=3] [ref=f3e176]
+            - list [ref=f3e177]:
+              - listitem [ref=f3e178]: Buka alamat aplikasi yang diberikan oleh penyedia aplikasi.
+              - listitem [ref=f3e179]:
+                - text: Pada halaman
+                - strong [ref=f3e180]: Masuk ke Panel
+                - text: ", masukkan"
+                - strong [ref=f3e181]: Username
+                - text: dan
+                - strong [ref=f3e182]: Password
+                - text: Admin.
+              - listitem [ref=f3e183]:
+                - text: Centang
+                - strong [ref=f3e184]: Ingat saya pada perangkat ini
+                - text: hanya jika perangkat tersebut milik pribadi.
+              - listitem [ref=f3e185]:
+                - text: Tekan
+                - strong [ref=f3e186]: Masuk ke Dashboard
+                - text: .
+              - listitem [ref=f3e187]: Jika akun masih memakai password sementara, aplikasi akan langsung meminta penggantian password.
+            - paragraph [ref=f3e188]: Username dan password Admin pertama diberikan saat aplikasi dipasang. Jika lupa, hubungi penyedia aplikasi atau Admin lain yang masih dapat masuk.
+            - heading "Login Guru" [level=3] [ref=f3e189]
+            - list [ref=f3e190]:
+              - listitem [ref=f3e191]:
+                - text: Admin membuat akun Guru terlebih dahulu melalui menu
+                - strong [ref=f3e192]: Guru → Data Guru
+                - text: .
+              - listitem [ref=f3e193]: Guru membuka alamat aplikasi yang sama dengan Admin.
+              - listitem [ref=f3e194]: Guru masuk memakai username dan password sementara yang diberikan Admin.
+              - listitem [ref=f3e195]: Pada login pertama, Guru wajib membuat password baru.
+              - listitem [ref=f3e196]:
+                - text: Setelah berhasil, Guru akan masuk ke
+                - strong [ref=f3e197]: Dashboard Guru
+                - text: .
+            - paragraph [ref=f3e198]:
+              - text: Jika Guru tidak dapat masuk, Admin perlu memeriksa apakah username benar dan status akun Guru masih
+              - strong [ref=f3e199]: Aktif
+              - text: .
+          - generic [ref=f3e200]:
+            - generic [ref=f3e201]: "3"
+            - heading "3. Mengganti password dan keluar" [level=2] [ref=f3e202]
+            - heading "Mengganti password pertama kali" [level=3] [ref=f3e203]
+            - list [ref=f3e204]:
+              - listitem [ref=f3e205]:
+                - text: Masukkan
+                - strong [ref=f3e206]: Password saat ini
+                - text: .
+              - listitem [ref=f3e207]:
+                - text: Masukkan
+                - strong [ref=f3e208]: Password baru
+                - text: .
+              - listitem [ref=f3e209]: Ulangi password baru dengan tepat.
+              - listitem [ref=f3e210]:
+                - text: Tekan
+                - strong [ref=f3e211]: Simpan Password
+                - text: .
+            - paragraph [ref=f3e212]: Password baru minimal 8 karakter dan harus berisi huruf besar, huruf kecil, serta angka.
+            - heading "Mengganti password setelah masuk" [level=3] [ref=f3e213]
+            - list [ref=f3e214]:
+              - listitem [ref=f3e215]: Tekan nama pengguna di kanan atas.
+              - listitem [ref=f3e216]:
+                - text: Pilih
+                - strong [ref=f3e217]: Ganti Password
+                - text: .
+              - listitem [ref=f3e218]: Isi password lama dan password baru.
+              - listitem [ref=f3e219]: Simpan perubahan.
+            - heading "Keluar dari aplikasi" [level=3] [ref=f3e220]
+            - list [ref=f3e221]:
+              - listitem [ref=f3e222]: Tekan nama pengguna di kanan atas.
+              - listitem [ref=f3e223]:
+                - text: Pilih
+                - strong [ref=f3e224]: Keluar
+                - text: .
+            - paragraph [ref=f3e225]: Selalu keluar dari aplikasi setelah selesai memakai komputer bersama.
+          - generic [ref=f3e226]:
+            - generic [ref=f3e227]: "4"
+            - heading "4. Urutan penggunaan dari awal sampai akhir" [level=2] [ref=f3e228]
+            - paragraph [ref=f3e229]: "Gunakan urutan berikut saat aplikasi baru mulai dipakai:"
+            - list [ref=f3e230]:
+              - listitem [ref=f3e231]: Admin login dan mengganti password sementara.
+              - listitem [ref=f3e232]:
+                - text: Admin melengkapi
+                - strong [ref=f3e233]: Profil Pesantren
+                - text: .
+              - listitem [ref=f3e234]:
+                - text: Admin memeriksa pengaturan bahasa Arab pada menu
+                - strong [ref=f3e235]: Aplikasi
+                - text: .
+              - listitem [ref=f3e236]:
+                - text: Admin membuka
+                - strong [ref=f3e237]: Tahun Ajaran
+                - text: dan mengaktifkan semester.
+              - listitem [ref=f3e238]:
+                - text: Admin menambahkan
+                - strong [ref=f3e239]: Guru
+                - text: ","
+                - strong [ref=f3e240]: Santri
+                - text: ", dan"
+                - strong [ref=f3e241]: Mata Pelajaran
+                - text: .
+              - listitem [ref=f3e242]:
+                - text: Admin menambahkan
+                - strong [ref=f3e243]: Ekstrakurikuler
+                - text: beserta Guru pembina.
+              - listitem [ref=f3e244]:
+                - text: Admin membuat
+                - strong [ref=f3e245]: Kelas
+                - text: ", memilih wali kelas, dan memasukkan anggota kelas."
+              - listitem [ref=f3e246]:
+                - text: Admin memilih mata pelajaran setiap kelas dan menetapkan
+                - strong [ref=f3e247]: KKM
+                - text: .
+              - listitem [ref=f3e248]:
+                - text: Admin menentukan
+                - strong [ref=f3e249]: Guru Pengampu
+                - text: .
+              - listitem [ref=f3e250]: Guru login dan mengisi nilai mata pelajaran.
+              - listitem [ref=f3e251]: Guru pembina mengisi nilai ekstrakurikuler.
+              - listitem [ref=f3e252]: Wali kelas mengisi presensi, kepribadian, dan catatan raport.
+              - listitem [ref=f3e253]:
+                - text: Admin memeriksa kelengkapan pada menu
+                - strong [ref=f3e254]: Status Nilai
+                - text: .
+              - listitem [ref=f3e255]: Admin mengunci nilai kelas.
+              - listitem [ref=f3e256]:
+                - text: Admin atau Guru membuka
+                - strong [ref=f3e257]: Cetak Raport
+                - text: ", melakukan pratinjau, lalu mengunduh PDF."
+              - listitem [ref=f3e258]: Pada akhir tahun, Admin memproses kenaikan kelas atau kelulusan.
+              - listitem [ref=f3e259]: Admin membuat dan mengunduh backup secara rutin.
+            - paragraph [ref=f3e260]: Jangan melompati pengaturan periode, kelas, KKM, atau penugasan Guru. Menu Guru akan kosong jika bagian tersebut belum disiapkan.
+          - generic [ref=f3e261]:
+            - generic [ref=f3e262]: "5"
+            - heading "5. Mengatur profil pesantren" [level=2] [ref=f3e263]
+            - paragraph [ref=f3e264]: Profil pesantren dipakai pada sampul, biodata, raport, dan dokumen lainnya.
+            - list [ref=f3e265]:
+              - listitem [ref=f3e266]: Login sebagai Admin.
+              - listitem [ref=f3e267]:
+                - text: Buka menu
+                - strong [ref=f3e268]: Profil Pesantren
+                - text: .
+              - listitem [ref=f3e269]: Unggah logo pesantren jika diperlukan. Format yang diterima adalah PNG, JPG, atau WebP dengan ukuran maksimal 2 MB.
+              - listitem [ref=f3e270]: "Lengkapi data berikut:"
+              - paragraph [ref=f3e271]: "- Nama pesantren dalam bahasa Indonesia dan Arab. - NSPP. - Alamat, desa/kelurahan, kecamatan, kabupaten/kota, provinsi, dan kode pos. - Nama pimpinan dalam bahasa Indonesia dan Arab. - Nomor telepon, email, dan situs web."
+              - listitem [ref=f3e272]:
+                - text: Periksa bagian
+                - strong [ref=f3e273]: Pratinjau Identitas Dokumen
+                - text: .
+              - listitem [ref=f3e274]:
+                - text: Tekan
+                - strong [ref=f3e275]: Simpan Profil
+                - text: .
+            - paragraph [ref=f3e276]:
+              - text: Jika tombol
+              - strong [ref=f3e277]: Isi otomatis
+              - text: atau
+              - strong [ref=f3e278]: Terjemahkan
+              - text: tersedia, hasilnya tetap harus diperiksa. Nama orang, nama daerah, dan istilah khusus pesantren dapat memerlukan koreksi manual.
+          - generic [ref=f3e279]:
+            - generic [ref=f3e280]: "6"
+            - heading "6. Mengatur bahasa Arab dan aplikasi" [level=2] [ref=f3e281]
+            - list [ref=f3e282]:
+              - listitem [ref=f3e283]:
+                - text: Buka menu
+                - strong [ref=f3e284]: Aplikasi
+                - text: .
+              - listitem [ref=f3e285]: Pilih penyedia penerjemah yang telah disiapkan pada server.
+              - listitem [ref=f3e286]:
+                - text: Aktifkan
+                - strong [ref=f3e287]: Terjemahan otomatis
+                - text: hanya jika status menunjukkan kredensial siap.
+              - listitem [ref=f3e288]: Atur batas penggunaan karakter sesuai kebutuhan.
+              - listitem [ref=f3e289]:
+                - text: Periksa
+                - strong [ref=f3e290]: Label Statis Indonesia — Arab
+                - text: satu per satu.
+              - listitem [ref=f3e291]: Perbaiki tulisan Arab jika hasil otomatis kurang tepat.
+              - listitem [ref=f3e292]:
+                - text: Tekan
+                - strong [ref=f3e293]: Simpan Pengaturan
+                - text: .
+            - paragraph [ref=f3e294]: Jika API penerjemah belum tersedia, aplikasi tetap dapat digunakan. Isi kolom Arab secara manual.
+          - generic [ref=f3e295]:
+            - generic [ref=f3e296]: "7"
+            - heading "7. Membuka tahun ajaran dan semester" [level=2] [ref=f3e297]
+            - list [ref=f3e298]:
+              - listitem [ref=f3e299]:
+                - text: Buka
+                - strong [ref=f3e300]: Lembaga → Pengaturan
+                - text: .
+              - listitem [ref=f3e301]:
+                - text: Tekan
+                - strong [ref=f3e302]: Buka Tahun Ajaran Baru
+                - text: .
+              - listitem [ref=f3e303]: Masukkan tahun mulai, tanggal mulai, dan tanggal selesai.
+              - listitem [ref=f3e304]: Pastikan rentang tanggal sudah benar.
+              - listitem [ref=f3e305]:
+                - text: Tekan
+                - strong [ref=f3e306]: Buka Tahun Ajaran
+                - text: .
+            - paragraph [ref=f3e307]:
+              - text: Saat tahun ajaran baru dibuat,
+              - strong [ref=f3e308]: Semester Ganjil
+              - text: otomatis menjadi aktif. Data tahun ajaran lama tidak dihapus dan tetap dapat dilihat sebagai riwayat.
+            - heading "Mengaktifkan Semester Genap" [level=3] [ref=f3e309]
+            - list [ref=f3e310]:
+              - listitem [ref=f3e311]:
+                - text: Buka
+                - strong [ref=f3e312]: Lembaga → Pengaturan
+                - text: .
+              - listitem [ref=f3e313]: Cari tahun ajaran yang sedang berjalan.
+              - listitem [ref=f3e314]:
+                - text: Pada kolom
+                - strong [ref=f3e315]: Semester Genap
+                - text: ", tekan"
+                - strong [ref=f3e316]: Aktifkan
+                - text: .
+              - listitem [ref=f3e317]: Setujui konfirmasi.
+            - paragraph [ref=f3e318]: Semester aktif menjadi acuan untuk kelas, anggota kelas, pengisian nilai, wali kelas, dan pencetakan. Pastikan semester yang tampil di bagian atas aplikasi sudah benar sebelum memasukkan data.
+          - generic [ref=f3e319]:
+            - generic [ref=f3e320]: "8"
+            - heading "8. Mengelola akun Admin dan pengumuman" [level=2] [ref=f3e321]
+            - heading "Menambah Admin lain" [level=3] [ref=f3e322]
+            - list [ref=f3e323]:
+              - listitem [ref=f3e324]:
+                - text: Buka menu
+                - strong [ref=f3e325]: Admin Aplikasi
+                - text: .
+              - listitem [ref=f3e326]: Isi nama lengkap dan username.
+              - listitem [ref=f3e327]: Buat password sementara minimal 12 karakter yang berisi huruf dan angka.
+              - listitem [ref=f3e328]: Ulangi password.
+              - listitem [ref=f3e329]:
+                - text: Pastikan
+                - strong [ref=f3e330]: Akun aktif
+                - text: dicentang.
+              - listitem [ref=f3e331]:
+                - text: Tekan
+                - strong [ref=f3e332]: Tambah Admin
+                - text: .
+              - listitem [ref=f3e333]: Berikan username dan password sementara kepada Admin tersebut secara aman.
+            - paragraph [ref=f3e334]: Admin baru wajib mengganti password pada login pertama. Pada halaman yang sama, Admin dapat memperbarui nama, username, status akun, atau memberikan password sementara baru.
+            - heading "Membuat pengumuman" [level=3] [ref=f3e335]
+            - list [ref=f3e336]:
+              - listitem [ref=f3e337]:
+                - text: Buka
+                - strong [ref=f3e338]: Dashboard Admin
+                - text: .
+              - listitem [ref=f3e339]:
+                - text: Pada bagian
+                - strong [ref=f3e340]: Info / Pengumuman
+                - text: ", tekan"
+                - strong [ref=f3e341]: Kelola pengumuman
+                - text: .
+              - listitem [ref=f3e342]: Isi judul dan isi pengumuman.
+              - listitem [ref=f3e343]: Atur tanggal mulai dan selesai tayang jika diperlukan.
+              - listitem [ref=f3e344]:
+                - text: Aktifkan
+                - strong [ref=f3e345]: Langsung aktif
+                - text: .
+              - listitem [ref=f3e346]:
+                - text: Tekan
+                - strong [ref=f3e347]: Tambahkan
+                - text: .
+            - paragraph [ref=f3e348]: Pengumuman aktif akan terlihat di Dashboard Admin dan Guru.
+          - generic [ref=f3e349]:
+            - generic [ref=f3e350]: "9"
+            - heading "9. Menambah dan mengelola Guru" [level=2] [ref=f3e351]
+            - heading "Menambah satu Guru" [level=3] [ref=f3e352]
+            - list [ref=f3e353]:
+              - listitem [ref=f3e354]:
+                - text: Buka
+                - strong [ref=f3e355]: Guru → Data Guru
+                - text: .
+              - listitem [ref=f3e356]:
+                - text: Tekan
+                - strong [ref=f3e357]: Tambah Guru
+                - text: .
+              - listitem [ref=f3e358]: Isi nama Indonesia, nama Arab jika ada, username, dan NIP.
+              - listitem [ref=f3e359]: Buat password sementara minimal 12 karakter yang berisi huruf dan angka.
+              - listitem [ref=f3e360]: Ulangi password sementara.
+              - listitem [ref=f3e361]: Lengkapi jenis kelamin, tempat dan tanggal lahir, telepon, email, serta alamat.
+              - listitem [ref=f3e362]:
+                - text: Pastikan
+                - strong [ref=f3e363]: Akun dan data Guru aktif
+                - text: dicentang.
+              - listitem [ref=f3e364]:
+                - text: Tekan
+                - strong [ref=f3e365]: Tambah Guru
+                - text: .
+              - listitem [ref=f3e366]: Berikan username dan password sementara kepada Guru.
+            - paragraph [ref=f3e367]: Username setiap Guru harus berbeda. NIP juga tidak boleh sama jika diisi.
+            - heading "Mengubah data atau mereset password Guru" [level=3] [ref=f3e368]
+            - list [ref=f3e369]:
+              - listitem [ref=f3e370]:
+                - text: Buka
+                - strong [ref=f3e371]: Guru → Data Guru
+                - text: .
+              - listitem [ref=f3e372]: Cari nama atau username Guru.
+              - listitem [ref=f3e373]:
+                - text: Tekan tombol
+                - strong [ref=f3e374]: Edit
+                - text: .
+              - listitem [ref=f3e375]: Perbaiki data yang diperlukan.
+              - listitem [ref=f3e376]:
+                - text: Untuk mereset password, isi
+                - strong [ref=f3e377]: Password sementara baru
+                - text: dan ulangi password. Jika tidak ingin mengganti password, biarkan kolom tersebut kosong.
+              - listitem [ref=f3e378]:
+                - text: Tekan
+                - strong [ref=f3e379]: Simpan Perubahan
+                - text: .
+            - paragraph [ref=f3e380]: Setelah password direset, Guru wajib menggantinya ketika login berikutnya.
+            - heading "Menonaktifkan Guru" [level=3] [ref=f3e381]
+            - paragraph [ref=f3e382]:
+              - text: Edit data Guru lalu matikan pilihan
+              - strong [ref=f3e383]: Akun dan data Guru aktif
+              - text: . Guru yang nonaktif tidak dapat login dan tidak dapat dipilih pada penugasan baru.
+            - paragraph [ref=f3e384]: Lebih aman menonaktifkan Guru yang sudah memiliki riwayat daripada menghapusnya.
+            - heading "Menambah banyak Guru dengan Excel" [level=3] [ref=f3e385]
+            - list [ref=f3e386]:
+              - listitem [ref=f3e387]:
+                - text: Buka
+                - strong [ref=f3e388]: Guru → Data Guru
+                - text: .
+              - listitem [ref=f3e389]:
+                - text: Pada bagian
+                - strong [ref=f3e390]: Import Excel
+                - text: ", tekan"
+                - strong [ref=f3e391]: Download Template
+                - text: .
+              - listitem [ref=f3e392]: Isi data mulai dari baris 5 tanpa mengubah judul kolom.
+              - listitem [ref=f3e393]:
+                - text: Simpan dalam format
+                - code [ref=f3e394]: .xlsx
+                - text: .
+              - listitem [ref=f3e395]:
+                - text: Tekan
+                - strong [ref=f3e396]: Pilih Excel
+                - text: ", pilih berkas, lalu tekan"
+                - strong [ref=f3e397]: Preview Import
+                - text: .
+              - listitem [ref=f3e398]: Periksa jumlah baris valid dan baris bermasalah.
+              - listitem [ref=f3e399]: Jika ada kesalahan, perbaiki berkas lalu unggah ulang.
+              - listitem [ref=f3e400]:
+                - text: Jika seluruh data valid, tekan
+                - strong [ref=f3e401]: Simpan Hasil Import
+                - text: .
+            - paragraph [ref=f3e402]:
+              - text: Data belum masuk ke aplikasi hanya dengan membuka preview. Penyimpanan baru dilakukan setelah tombol
+              - strong [ref=f3e403]: Simpan Hasil Import
+              - text: ditekan.
+          - generic [ref=f3e404]:
+            - generic [ref=f3e405]: "10"
+            - heading "10. Menambah dan mengelola Santri" [level=2] [ref=f3e406]
+            - heading "Menambah satu Santri" [level=3] [ref=f3e407]
+            - list [ref=f3e408]:
+              - listitem [ref=f3e409]:
+                - text: Buka
+                - strong [ref=f3e410]: Santri → Data Santri
+                - text: .
+              - listitem [ref=f3e411]:
+                - text: Tekan
+                - strong [ref=f3e412]: Tambah Santri
+                - text: .
+              - listitem [ref=f3e413]: Unggah foto jika ada. Format foto adalah JPG, PNG, atau WebP dengan ukuran maksimal 2 MB.
+              - listitem [ref=f3e414]: Isi NISN sebanyak 10 digit.
+              - listitem [ref=f3e415]: Isi nama, jenis kelamin, tempat lahir, tanggal lahir, dan status.
+              - listitem [ref=f3e416]: Lengkapi nama ayah, nama ibu, serta alamat.
+              - listitem [ref=f3e417]: Isi versi bahasa Arab jika diperlukan.
+              - listitem [ref=f3e418]:
+                - text: Tekan
+                - strong [ref=f3e419]: Tambah Santri
+                - text: .
+            - paragraph [ref=f3e420]: NISN harus unik. Pastikan nama, tanggal lahir, dan data orang tua benar karena data tersebut dipakai pada biodata dan raport.
+            - heading "Mengubah data Santri" [level=3] [ref=f3e421]
+            - list [ref=f3e422]:
+              - listitem [ref=f3e423]:
+                - text: Buka
+                - strong [ref=f3e424]: Santri → Data Santri
+                - text: .
+              - listitem [ref=f3e425]: Cari berdasarkan nama atau NISN.
+              - listitem [ref=f3e426]:
+                - text: Tekan
+                - strong [ref=f3e427]: Edit
+                - text: .
+              - listitem [ref=f3e428]: Perbaiki data atau ganti foto.
+              - listitem [ref=f3e429]:
+                - text: Tekan
+                - strong [ref=f3e430]: Simpan Perubahan
+                - text: .
+            - heading "Menambah banyak Santri dengan Excel" [level=3] [ref=f3e431]
+            - list [ref=f3e432]:
+              - listitem [ref=f3e433]:
+                - text: Buka
+                - strong [ref=f3e434]: Santri → Data Santri
+                - text: .
+              - listitem [ref=f3e435]:
+                - text: Tekan
+                - strong [ref=f3e436]: Download Template
+                - text: pada bagian
+                - strong [ref=f3e437]: Import Excel
+                - text: .
+              - listitem [ref=f3e438]: Isi data mulai baris 5 tanpa mengubah judul kolom.
+              - listitem [ref=f3e439]:
+                - text: Simpan sebagai
+                - code [ref=f3e440]: .xlsx
+                - text: .
+              - listitem [ref=f3e441]:
+                - text: Pilih berkas lalu tekan
+                - strong [ref=f3e442]: Preview Import
+                - text: .
+              - listitem [ref=f3e443]: Perbaiki semua baris yang ditandai bermasalah.
+              - listitem [ref=f3e444]:
+                - text: Setelah seluruh baris valid, tekan
+                - strong [ref=f3e445]: Simpan Hasil Import
+                - text: .
+            - paragraph [ref=f3e446]: "Import bersifat menyeluruh: jika masih ada baris bermasalah, tidak ada data yang disimpan."
+          - generic [ref=f3e447]:
+            - generic [ref=f3e448]: "11"
+            - heading "11. Mengelola mata pelajaran" [level=2] [ref=f3e449]
+            - list [ref=f3e450]:
+              - listitem [ref=f3e451]:
+                - text: Buka
+                - strong [ref=f3e452]: Lembaga → Mata Pelajaran
+                - text: .
+              - listitem [ref=f3e453]: Periksa mata pelajaran yang sudah tersedia sebelum menambah data baru.
+              - listitem [ref=f3e454]:
+                - text: Untuk menambah, tekan
+                - strong [ref=f3e455]: Tambah Mata Pelajaran
+                - text: .
+              - listitem [ref=f3e456]: Isi kode, nomor urut, nama Indonesia, dan nama Arab.
+              - listitem [ref=f3e457]:
+                - text: Pilih kelompok
+                - strong [ref=f3e458]: Pondok
+                - text: atau
+                - strong [ref=f3e459]: Umum
+                - text: .
+              - listitem [ref=f3e460]: Pilih tipe ujian. Jika memilih ujian lisan, tentukan kelompok ujian lisan.
+              - listitem [ref=f3e461]: Pastikan status mata pelajaran aktif.
+              - listitem [ref=f3e462]:
+                - text: Tekan
+                - strong [ref=f3e463]: Tambah Mata Pelajaran
+                - text: .
+            - paragraph [ref=f3e464]:
+              - text: Nomor urut menentukan susunan mata pelajaran pada daftar dan dokumen. Mata pelajaran kelompok Umum otomatis memakai tipe ujian
+              - strong [ref=f3e465]: Tidak berlaku
+              - text: .
+            - paragraph [ref=f3e466]:
+              - text: Untuk menambah banyak mata pelajaran, gunakan
+              - strong [ref=f3e467]: Download Template
+              - text: ", isi berkas Excel, buka"
+              - strong [ref=f3e468]: Preview Import
+              - text: ", perbaiki kesalahan, lalu tekan"
+              - strong [ref=f3e469]: Simpan Hasil Import
+              - text: .
+          - generic [ref=f3e470]:
+            - generic [ref=f3e471]: "12"
+            - heading "12. Mengelola ekstrakurikuler" [level=2] [ref=f3e472]
+            - list [ref=f3e473]:
+              - listitem [ref=f3e474]:
+                - text: Buka
+                - strong [ref=f3e475]: Raport → Ekstrakurikuler
+                - text: .
+              - listitem [ref=f3e476]:
+                - text: Tekan
+                - strong [ref=f3e477]: Tambah Ekstrakurikuler
+                - text: .
+              - listitem [ref=f3e478]: Isi nama Indonesia dan nama Arab jika ada.
+              - listitem [ref=f3e479]:
+                - text: Pilih
+                - strong [ref=f3e480]: Guru pembina
+                - text: dari Guru yang aktif.
+              - listitem [ref=f3e481]: Isi deskripsi jika diperlukan.
+              - listitem [ref=f3e482]: Aktifkan kegiatan.
+              - listitem [ref=f3e483]:
+                - text: Tekan
+                - strong [ref=f3e484]: Tambah Ekstrakurikuler
+                - text: .
+            - paragraph [ref=f3e485]:
+              - text: Guru pembina akan melihat kegiatan tersebut pada menu
+              - strong [ref=f3e486]: Ekstrakurikuler
+              - text: di akun Guru. Penilaian dapat dilakukan untuk kelas aktif yang dipilih Guru.
+          - generic [ref=f3e487]:
+            - generic [ref=f3e488]: "13"
+            - heading "13. Membuat kelas dan memasukkan anggota" [level=2] [ref=f3e489]
+            - paragraph [ref=f3e490]: Sebelum membuat kelas, pastikan tahun ajaran, semester, Guru, dan Santri sudah tersedia.
+            - list [ref=f3e491]:
+              - listitem [ref=f3e492]:
+                - text: Buka
+                - strong [ref=f3e493]: Lembaga → Kelas
+                - text: .
+              - listitem [ref=f3e494]: Pilih tahun ajaran dan semester yang benar.
+              - listitem [ref=f3e495]:
+                - text: Tekan
+                - strong [ref=f3e496]: Tambah Kelas
+                - text: .
+              - listitem [ref=f3e497]:
+                - text: Isi nama kelas, misalnya
+                - code [ref=f3e498]: Kelas 1A
+                - text: .
+              - listitem [ref=f3e499]: Pilih tingkat 1 sampai 6.
+              - listitem [ref=f3e500]: Pilih wali kelas dari Guru aktif.
+              - listitem [ref=f3e501]: Pastikan kelas berstatus aktif.
+              - listitem [ref=f3e502]:
+                - text: Pada bagian
+                - strong [ref=f3e503]: Anggota Kelas
+                - text: ", cari lalu centang Santri yang akan dimasukkan."
+              - listitem [ref=f3e504]:
+                - text: Tekan
+                - strong [ref=f3e505]: Buat Kelas
+                - text: .
+            - paragraph [ref=f3e506]: Satu Santri hanya dapat menjadi anggota satu kelas aktif pada semester yang sama.
+            - paragraph [ref=f3e507]:
+              - text: Saat mengedit kelas, anggota aktif tidak dapat dikeluarkan hanya dengan menghapus centang. Gunakan menu
+              - strong [ref=f3e508]: Santri → Pindah Kelas
+              - text: agar riwayat akademik tetap tersimpan.
+          - generic [ref=f3e509]:
+            - generic [ref=f3e510]: "14"
+            - heading "14. Mengatur mata pelajaran dan KKM kelas" [level=2] [ref=f3e511]
+            - list [ref=f3e512]:
+              - listitem [ref=f3e513]:
+                - text: Buka
+                - strong [ref=f3e514]: Raport → Nilai KKM
+                - text: .
+              - listitem [ref=f3e515]: Pilih tahun ajaran, semester, dan kelas.
+              - listitem [ref=f3e516]:
+                - text: Tekan
+                - strong [ref=f3e517]: Tampilkan
+                - text: .
+              - listitem [ref=f3e518]: Centang mata pelajaran yang berlaku untuk kelas tersebut.
+              - listitem [ref=f3e519]: Isi nilai KKM antara 0 sampai 100 untuk setiap mata pelajaran yang dipilih.
+              - listitem [ref=f3e520]:
+                - text: Tekan
+                - strong [ref=f3e521]: Simpan Mapel & KKM
+                - text: .
+            - paragraph [ref=f3e522]:
+              - text: Nilai desimal diperbolehkan, misalnya
+              - code [ref=f3e523]: 72,50
+              - text: . Lakukan langkah ini untuk setiap kelas.
+          - generic [ref=f3e524]:
+            - generic [ref=f3e525]: "15"
+            - heading "15. Menentukan Guru pengampu" [level=2] [ref=f3e526]
+            - list [ref=f3e527]:
+              - listitem [ref=f3e528]:
+                - text: Buka
+                - strong [ref=f3e529]: Guru → Mengajar
+                - text: .
+              - listitem [ref=f3e530]: Pilih tahun ajaran, semester, dan kelas.
+              - listitem [ref=f3e531]:
+                - text: Tekan
+                - strong [ref=f3e532]: Tampilkan
+                - text: .
+              - listitem [ref=f3e533]: Pada setiap mata pelajaran, pilih Guru pengampu.
+              - listitem [ref=f3e534]:
+                - text: Tekan
+                - strong [ref=f3e535]: Simpan Penugasan
+                - text: .
+            - paragraph [ref=f3e536]: Setelah penugasan tersimpan, mata pelajaran dan kelas akan muncul di akun Guru terkait.
+            - paragraph [ref=f3e537]:
+              - text: Jika beberapa kelas memakai susunan yang sama, gunakan
+              - strong [ref=f3e538]: Salin Konfigurasi
+              - text: . Fitur ini menyalin mata pelajaran, KKM, dan Guru pengampu dari kelas sumber ke kelas tujuan. Nilai Santri tidak ikut disalin.
+          - generic [ref=f3e539]:
+            - generic [ref=f3e540]: "16"
+            - heading "16. Panduan Guru mengisi nilai" [level=2] [ref=f3e541]
+            - heading "Membuka tugas mengajar" [level=3] [ref=f3e542]
+            - list [ref=f3e543]:
+              - listitem [ref=f3e544]: Login menggunakan akun Guru.
+              - listitem [ref=f3e545]:
+                - text: Buka menu
+                - strong [ref=f3e546]: Pengisian Nilai
+                - text: .
+              - listitem [ref=f3e547]: Pilih kelas dan mata pelajaran.
+              - listitem [ref=f3e548]:
+                - text: Tekan
+                - strong [ref=f3e549]: Isi Nilai
+                - text: .
+            - paragraph [ref=f3e550]: Jika daftar kosong, Guru perlu meminta Admin memeriksa semester aktif, KKM kelas, status Guru, dan penugasan mengajar.
+            - heading "Mengatur perhitungan nilai" [level=3] [ref=f3e551]
+            - list [ref=f3e552]:
+              - listitem [ref=f3e553]:
+                - text: Pada bagian
+                - strong [ref=f3e554]: Konfigurasi Perhitungan
+                - text: ", isi bobot Harian dan UAS."
+              - listitem [ref=f3e555]: Jumlah kedua bobot harus tepat 100%.
+              - listitem [ref=f3e556]:
+                - text: Tambahkan nama komponen nilai harian, misalnya
+                - code [ref=f3e557]: NH1
+                - text: ","
+                - code [ref=f3e558]: Tugas
+                - text: ", atau"
+                - code [ref=f3e559]: Praktik
+                - text: .
+              - listitem [ref=f3e560]: Minimal ada satu komponen dan maksimal 20 komponen.
+              - listitem [ref=f3e561]:
+                - text: Tekan
+                - strong [ref=f3e562]: Simpan Konfigurasi
+                - text: .
+            - paragraph [ref=f3e563]: Mengubah konfigurasi akan menghitung ulang nilai yang sudah tersimpan. Unduh ulang template Excel setelah komponen nilai diubah.
+            - heading "Mengisi nilai secara manual" [level=3] [ref=f3e564]
+            - list [ref=f3e565]:
+              - listitem [ref=f3e566]: Masukkan nilai setiap komponen pada rentang 0 sampai 100.
+              - listitem [ref=f3e567]: Masukkan nilai UAS pada rentang 0 sampai 100.
+              - listitem [ref=f3e568]: Periksa rata-rata, nilai akhir, dan status ketuntasan yang dihitung otomatis.
+              - listitem [ref=f3e569]:
+                - text: Tekan
+                - strong [ref=f3e570]: Simpan Semua Nilai
+                - text: .
+            - paragraph [ref=f3e571]: Nilai di bawah KKM akan ditandai. Pastikan seluruh Santri memiliki nilai akhir sebelum kelas dikunci.
+            - heading "Mengisi nilai dengan Excel" [level=3] [ref=f3e572]
+            - list [ref=f3e573]:
+              - listitem [ref=f3e574]: Atur dan simpan komponen nilai terlebih dahulu.
+              - listitem [ref=f3e575]:
+                - text: Tekan
+                - strong [ref=f3e576]: Download Template
+                - text: .
+              - listitem [ref=f3e577]: Isi nilai pada berkas tanpa mengubah NISN, nama Santri, atau judul kolom.
+              - listitem [ref=f3e578]:
+                - text: Simpan sebagai
+                - code [ref=f3e579]: .xlsx
+                - text: .
+              - listitem [ref=f3e580]:
+                - text: Tekan
+                - strong [ref=f3e581]: Pilih Excel
+                - text: ", lalu"
+                - strong [ref=f3e582]: Preview Import
+                - text: .
+              - listitem [ref=f3e583]: Periksa hasil validasi.
+              - listitem [ref=f3e584]:
+                - text: Jika tidak ada kesalahan, tekan
+                - strong [ref=f3e585]: Simpan Hasil Import
+                - text: .
+            - paragraph [ref=f3e586]: Baris tanpa nilai akan diabaikan saat preview. Jika konfigurasi komponen berubah, unduh template baru.
+          - generic [ref=f3e587]:
+            - generic [ref=f3e588]: "17"
+            - heading "17. Panduan Guru pembina ekstrakurikuler" [level=2] [ref=f3e589]
+            - list [ref=f3e590]:
+              - listitem [ref=f3e591]: Login sebagai Guru pembina.
+              - listitem [ref=f3e592]:
+                - text: Buka menu
+                - strong [ref=f3e593]: Ekstrakurikuler
+                - text: .
+              - listitem [ref=f3e594]: Pilih kegiatan dan kelas.
+              - listitem [ref=f3e595]: "Pilih nilai:"
+              - paragraph [ref=f3e596]:
+                - text: "-"
+                - strong [ref=f3e597]: A
+                - text: untuk Santri yang aktif. -
+                - strong [ref=f3e598]: B
+                - text: untuk Santri yang kurang aktif. - Kosongkan jika Santri tidak mengikuti kegiatan.
+              - listitem [ref=f3e599]:
+                - text: Tekan
+                - strong [ref=f3e600]: Simpan Nilai Ekstrakurikuler
+                - text: .
+            - paragraph [ref=f3e601]:
+              - text: Nilai kosong tidak ditampilkan pada raport. Pengisian massal juga dapat dilakukan melalui
+              - strong [ref=f3e602]: Download Template
+              - text: ","
+              - strong [ref=f3e603]: Preview Import
+              - text: ", dan"
+              - strong [ref=f3e604]: Simpan Hasil Import
+              - text: .
+          - generic [ref=f3e605]:
+            - generic [ref=f3e606]: "18"
+            - heading "18. Panduan Guru wali kelas" [level=2] [ref=f3e607]
+            - list [ref=f3e608]:
+              - listitem [ref=f3e609]: Login sebagai Guru yang telah ditetapkan sebagai wali kelas.
+              - listitem [ref=f3e610]:
+                - text: Buka menu
+                - strong [ref=f3e611]: Wali Kelas
+                - text: .
+              - listitem [ref=f3e612]:
+                - text: Isi jumlah
+                - strong [ref=f3e613]: Sakit
+                - text: ","
+                - strong [ref=f3e614]: Izin
+                - text: ", dan"
+                - strong [ref=f3e615]: Alpa
+                - text: untuk setiap Santri.
+              - listitem [ref=f3e616]:
+                - text: Pilih nilai
+                - strong [ref=f3e617]: Akhlak
+                - text: ","
+                - strong [ref=f3e618]: Kedisiplinan
+                - text: ", dan"
+                - strong [ref=f3e619]: Kebersihan
+                - text: dari A sampai E.
+              - listitem [ref=f3e620]:
+                - text: Isi
+                - strong [ref=f3e621]: Catatan Indonesia
+                - text: .
+              - listitem [ref=f3e622]:
+                - text: Isi
+                - strong [ref=f3e623]: Catatan Arab
+                - text: .
+              - listitem [ref=f3e624]:
+                - text: Tekan
+                - strong [ref=f3e625]: Simpan Data Wali Kelas
+                - text: .
+              - listitem [ref=f3e626]:
+                - text: Tekan
+                - strong [ref=f3e627]: Lihat Status Kelas
+                - text: untuk memeriksa progres seluruh Guru.
+            - paragraph [ref=f3e628]: Catatan Indonesia dan Arab wajib lengkap sebelum Admin dapat mengunci nilai. Setelah kelas dikunci, data hanya dapat dilihat sampai Admin membuka kunci kembali.
+          - generic [ref=f3e629]:
+            - generic [ref=f3e630]: "19"
+            - heading "19. Memeriksa dan mengunci nilai" [level=2] [ref=f3e631]
+            - paragraph [ref=f3e632]: Penguncian dilakukan oleh Admin setelah seluruh pengisian selesai.
+            - list [ref=f3e633]:
+              - listitem [ref=f3e634]:
+                - text: Buka
+                - strong [ref=f3e635]: Raport → Status Nilai
+                - text: .
+              - listitem [ref=f3e636]: Periksa persentase setiap kelas.
+              - listitem [ref=f3e637]:
+                - text: Tekan
+                - strong [ref=f3e638]: Detail
+                - text: pada kelas yang akan diperiksa.
+              - listitem [ref=f3e639]: Periksa bagian yang belum lengkap.
+              - listitem [ref=f3e640]: Minta Guru pengampu atau wali kelas melengkapi data jika masih ada kekurangan.
+              - listitem [ref=f3e641]:
+                - text: Jika seluruh data sudah lengkap, tekan
+                - strong [ref=f3e642]: Kunci Nilai Kelas
+                - text: .
+              - listitem [ref=f3e643]: Setujui konfirmasi.
+            - paragraph [ref=f3e644]: "Kelas hanya dapat dikunci jika:"
+            - list [ref=f3e645]:
+              - listitem [ref=f3e646]: Memiliki Santri aktif.
+              - listitem [ref=f3e647]: Memiliki mata pelajaran aktif.
+              - listitem [ref=f3e648]: Setiap mata pelajaran memiliki Guru pengampu.
+              - listitem [ref=f3e649]: Nilai akhir seluruh Santri sudah tersedia pada setiap mata pelajaran.
+              - listitem [ref=f3e650]: Wali kelas sudah ditentukan.
+              - listitem [ref=f3e651]: Presensi seluruh Santri sudah tersimpan.
+              - listitem [ref=f3e652]: Nilai kepribadian seluruh Santri sudah lengkap.
+              - listitem [ref=f3e653]: Catatan wali kelas dalam bahasa Indonesia dan Arab sudah lengkap.
+            - paragraph [ref=f3e654]:
+              - text: Setelah dikunci, Guru tidak dapat mengubah nilai mata pelajaran, nilai ekstrakurikuler, atau data wali kelas. Jika ada kesalahan, Admin dapat membuka halaman detail lalu menekan
+              - strong [ref=f3e655]: Buka Kunci Nilai
+              - text: . Setelah koreksi selesai, kunci kembali kelas tersebut.
+          - generic [ref=f3e656]:
+            - generic [ref=f3e657]: "20"
+            - heading "20. Mengatur dan mengunduh hasil raport" [level=2] [ref=f3e658]
+            - heading "Mengatur hasil cetak" [level=3] [ref=f3e659]
+            - list [ref=f3e660]:
+              - listitem [ref=f3e661]: Login sebagai Admin.
+              - listitem [ref=f3e662]:
+                - text: Buka
+                - strong [ref=f3e663]: Raport → Pengaturan Cetak
+                - text: .
+              - listitem [ref=f3e664]: Isi tempat cetak.
+              - listitem [ref=f3e665]: Isi tanggal cetak tetap atau kosongkan agar sistem memakai tanggal saat dokumen dibuat.
+              - listitem [ref=f3e666]: Atur penyesuaian kalender Hijriah antara -3 sampai 3 hari jika diperlukan.
+              - listitem [ref=f3e667]:
+                - text: Atur format nama berkas/footer. Placeholder yang tersedia adalah
+                - code [ref=f3e668]: "{nama}"
+                - text: ","
+                - code [ref=f3e669]: "{nisn}"
+                - text: ","
+                - code [ref=f3e670]: "{kelas}"
+                - text: ","
+                - code [ref=f3e671]: "{semester}"
+                - text: ", dan"
+                - code [ref=f3e672]: "{tahun_ajaran}"
+                - text: .
+              - listitem [ref=f3e673]: Periksa ukuran kartu Santri. Ukuran baku adalah 85,60 × 53,98 mm.
+              - listitem [ref=f3e674]:
+                - text: Tekan
+                - strong [ref=f3e675]: Simpan Pengaturan
+                - text: .
+            - heading "Pratinjau dan unduh PDF" [level=3] [ref=f3e676]
+            - list [ref=f3e677]:
+              - listitem [ref=f3e678]:
+                - text: Buka menu
+                - strong [ref=f3e679]: Cetak Raport
+                - text: .
+              - listitem [ref=f3e680]: Pilih semester dan kelas.
+              - listitem [ref=f3e681]: Periksa jumlah Santri dan status penguncian.
+              - listitem [ref=f3e682]:
+                - text: Pilih
+                - strong [ref=f3e683]: Pratinjau
+                - text: untuk memeriksa tampilan di tab baru.
+              - listitem [ref=f3e684]: Pilih tombol unduh untuk menyimpan PDF.
+            - paragraph [ref=f3e685]: "Dokumen yang tersedia:"
+            - list [ref=f3e686]:
+              - listitem [ref=f3e687]:
+                - strong [ref=f3e688]: Raport
+                - text: per Santri atau satu kelas.
+              - listitem [ref=f3e689]:
+                - strong [ref=f3e690]: Sampul
+                - text: per Santri atau satu kelas.
+              - listitem [ref=f3e691]:
+                - strong [ref=f3e692]: Biodata
+                - text: per Santri atau satu kelas.
+              - listitem [ref=f3e693]:
+                - strong [ref=f3e694]: Kartu Santri
+                - text: per Santri atau satu kelas.
+              - listitem [ref=f3e695]:
+                - strong [ref=f3e696]: Leger Nilai
+                - text: satu kelas.
+            - paragraph [ref=f3e697]: Raport dan leger final hanya dapat diunduh setelah nilai kelas dikunci. Sampul, biodata, dan kartu dapat diperiksa sebelum nilai dikunci.
+            - paragraph [ref=f3e698]: Berkas PDF biasanya masuk ke folder unduhan browser. Buka PDF dan periksa nama pesantren, identitas Santri, nilai, tanda tangan, tanggal, serta pemisahan halaman sebelum dicetak.
+            - heading "Mengganti kode QR kartu" [level=3] [ref=f3e699]
+            - paragraph [ref=f3e700]:
+              - text: Pada daftar dokumen per Santri, Admin dapat memilih
+              - strong [ref=f3e701]: Ganti QR
+              - text: . Gunakan hanya jika kode lama perlu dibatalkan karena kartu hilang atau diganti. Setelah kode diperbarui, QR pada kartu lama tidak berlaku.
+          - generic [ref=f3e702]:
+            - generic [ref=f3e703]: "21"
+            - heading "21. Pindah kelas, kenaikan kelas, dan alumni" [level=2] [ref=f3e704]
+            - heading "Memindahkan Santri pada semester aktif" [level=3] [ref=f3e705]
+            - list [ref=f3e706]:
+              - listitem [ref=f3e707]:
+                - text: Buka
+                - strong [ref=f3e708]: Santri → Pindah Kelas
+                - text: .
+              - listitem [ref=f3e709]: Cari Santri berdasarkan nama, NISN, atau kelas asal.
+              - listitem [ref=f3e710]:
+                - text: Tekan
+                - strong [ref=f3e711]: Pilih
+                - text: .
+              - listitem [ref=f3e712]: Pilih kelas tujuan.
+              - listitem [ref=f3e713]: Isi alasan perpindahan minimal 5 karakter.
+              - listitem [ref=f3e714]:
+                - text: Tekan
+                - strong [ref=f3e715]: Simpan Perpindahan
+                - text: .
+            - paragraph [ref=f3e716]: Kelas asal, nilai, dan jejak perubahan tetap tersimpan. Nilai kelas yang sudah dikunci tidak dapat dipindahkan.
+            - heading "Melihat riwayat Santri" [level=3] [ref=f3e717]
+            - list [ref=f3e718]:
+              - listitem [ref=f3e719]:
+                - text: Buka
+                - strong [ref=f3e720]: Santri → Riwayat Santri
+                - text: .
+              - listitem [ref=f3e721]: Cari nama atau NISN.
+              - listitem [ref=f3e722]:
+                - text: Tekan
+                - strong [ref=f3e723]: Lihat
+                - text: .
+            - paragraph [ref=f3e724]: Halaman ini menampilkan kelas, semester, perpindahan, kenaikan, dan kelulusan tanpa mengubah data lama.
+            - heading "Memproses kenaikan kelas" [level=3] [ref=f3e725]
+            - paragraph [ref=f3e726]: Kenaikan dilakukan dari Semester Genap yang nilainya sudah dikunci.
+            - list [ref=f3e727]:
+              - listitem [ref=f3e728]: Pastikan nilai kelas asal sudah dikunci.
+              - listitem [ref=f3e729]: Buka tahun ajaran berikutnya dan aktifkan Semester Ganjil.
+              - listitem [ref=f3e730]: Buat kelas tujuan pada tingkat berikutnya.
+              - listitem [ref=f3e731]:
+                - text: Buka
+                - strong [ref=f3e732]: Santri → Naik Kelas
+                - text: .
+              - listitem [ref=f3e733]: Pilih semester asal dan kelas asal.
+              - listitem [ref=f3e734]: Pilih kelas tujuan.
+              - listitem [ref=f3e735]: Centang Santri yang naik kelas.
+              - listitem [ref=f3e736]: Isi catatan proses jika diperlukan.
+              - listitem [ref=f3e737]:
+                - text: Tekan
+                - strong [ref=f3e738]: Proses Kenaikan
+                - text: dan setujui konfirmasi.
+            - paragraph [ref=f3e739]: Santri tingkat 1 sampai 5 naik satu tingkat. Proses ini menyimpan riwayat permanen dan tidak boleh dijalankan dua kali untuk data yang sama.
+            - heading "Memproses kelulusan" [level=3] [ref=f3e740]
+            - list [ref=f3e741]:
+              - listitem [ref=f3e742]:
+                - text: Pilih kelas tingkat 6 pada menu
+                - strong [ref=f3e743]: Naik Kelas
+                - text: .
+              - listitem [ref=f3e744]: Pastikan nilai Semester Genap sudah dikunci.
+              - listitem [ref=f3e745]: Centang Santri yang dinyatakan lulus.
+              - listitem [ref=f3e746]: Isi catatan kelulusan jika diperlukan.
+              - listitem [ref=f3e747]:
+                - text: Tekan
+                - strong [ref=f3e748]: Proses Kelulusan
+                - text: .
+            - paragraph [ref=f3e749]:
+              - text: Santri yang lulus otomatis masuk ke menu
+              - strong [ref=f3e750]: Santri → Data Alumni
+              - text: .
+          - generic [ref=f3e751]:
+            - generic [ref=f3e752]: "22"
+            - heading "22. Backup dan pemulihan data" [level=2] [ref=f3e753]
+            - heading "Membuat backup manual" [level=3] [ref=f3e754]
+            - paragraph [ref=f3e755]: Lakukan backup sebelum perubahan besar, sebelum kenaikan kelas, dan secara rutin.
+            - list [ref=f3e756]:
+              - listitem [ref=f3e757]:
+                - text: Buka
+                - strong [ref=f3e758]: Backup & Restore
+                - text: .
+              - listitem [ref=f3e759]:
+                - text: Tekan
+                - strong [ref=f3e760]: Buat & Unduh Backup
+                - text: .
+              - listitem [ref=f3e761]: Tunggu sampai berkas ZIP selesai diunduh.
+              - listitem [ref=f3e762]: Simpan salinan di tempat lain, misalnya komputer kantor atau penyimpanan awan yang aman.
+              - listitem [ref=f3e763]:
+                - text: Periksa riwayat backup dan pastikan statusnya
+                - strong [ref=f3e764]: Selesai
+                - text: .
+            - paragraph [ref=f3e765]:
+              - text: Paket backup berisi data aplikasi, unggahan, dan
+              - code [ref=f3e766]: database.sql
+              - text: untuk pemulihan darurat.
+            - heading "Mengatur backup otomatis" [level=3] [ref=f3e767]
+            - list [ref=f3e768]:
+              - listitem [ref=f3e769]:
+                - text: Buka
+                - strong [ref=f3e770]: Backup & Restore
+                - text: .
+              - listitem [ref=f3e771]:
+                - text: Aktifkan
+                - strong [ref=f3e772]: Backup otomatis
+                - text: .
+              - listitem [ref=f3e773]: Pilih frekuensi harian atau mingguan.
+              - listitem [ref=f3e774]: Pilih hari dan jam.
+              - listitem [ref=f3e775]: Atur jumlah backup yang dipertahankan.
+              - listitem [ref=f3e776]:
+                - text: Tekan
+                - strong [ref=f3e777]: Simpan Pengaturan
+                - text: .
+            - paragraph [ref=f3e778]: Backup otomatis membutuhkan Cron yang aktif pada hosting. Minta penyedia aplikasi memeriksanya jika backup terjadwal tidak berjalan.
+            - heading "Memulihkan data dari backup" [level=3] [ref=f3e779]
+            - complementary [ref=f3e780]:
+              - strong [ref=f3e781]: "Peringatan:"
+              - text: Restore mengganti data aktif dengan isi backup. Jangan melakukan restore hanya untuk mencoba.
+            - list [ref=f3e782]:
+              - listitem [ref=f3e783]: Buat dan unduh backup terbaru sebelum memulai.
+              - listitem [ref=f3e784]:
+                - text: Pada bagian
+                - strong [ref=f3e785]: Restore dari paket backup
+                - text: ", pilih berkas ZIP."
+              - listitem [ref=f3e786]:
+                - text: Tekan
+                - strong [ref=f3e787]: Periksa Berkas
+                - text: .
+              - listitem [ref=f3e788]: Periksa tanggal, jumlah tabel, jumlah data, dan status checksum.
+              - listitem [ref=f3e789]: Masukkan password Admin saat ini.
+              - listitem [ref=f3e790]:
+                - text: Ketik
+                - code [ref=f3e791]: PULIHKAN DATA
+                - text: sesuai petunjuk.
+              - listitem [ref=f3e792]:
+                - text: Tekan
+                - strong [ref=f3e793]: Buat Pengaman & Mulai Restore
+                - text: .
+            - paragraph [ref=f3e794]: Gunakan paket backup dari aplikasi yang sama. Jika muncul pesan tentang kunci aplikasi atau paket tidak valid, jangan melanjutkan dan hubungi penyedia aplikasi.
+          - generic [ref=f3e795]:
+            - generic [ref=f3e796]: "23"
+            - heading "23. Masalah yang sering terjadi" [level=2] [ref=f3e797]
+            - heading "Guru tidak dapat login" [level=3] [ref=f3e798]
+            - list [ref=f3e799]:
+              - listitem [ref=f3e800]: Pastikan username dan password benar.
+              - listitem [ref=f3e801]: Pastikan akun Guru berstatus aktif.
+              - listitem [ref=f3e802]:
+                - text: Jika lupa password, Admin membuka
+                - strong [ref=f3e803]: Guru → Data Guru → Edit
+                - text: ", lalu membuat password sementara baru."
+            - heading "Menu Pengisian Nilai Guru kosong" [level=3] [ref=f3e804]
+            - list [ref=f3e805]:
+              - listitem [ref=f3e806]: Pastikan semester yang benar sedang aktif.
+              - listitem [ref=f3e807]: Pastikan kelas berstatus aktif.
+              - listitem [ref=f3e808]: Pastikan mata pelajaran dan KKM sudah diterapkan pada kelas.
+              - listitem [ref=f3e809]: Pastikan Admin sudah menentukan Guru pengampu.
+            - heading "Menu Wali Kelas kosong" [level=3] [ref=f3e810]
+            - paragraph [ref=f3e811]:
+              - text: Admin harus menetapkan Guru sebagai wali kelas pada
+              - strong [ref=f3e812]: Lembaga → Kelas
+              - text: .
+            - heading "Menu Ekstrakurikuler Guru kosong" [level=3] [ref=f3e813]
+            - paragraph [ref=f3e814]:
+              - text: Admin harus memilih Guru tersebut sebagai pembina pada
+              - strong [ref=f3e815]: Raport → Ekstrakurikuler
+              - text: dan memastikan kegiatan berstatus aktif.
+            - heading "Nilai tidak dapat diubah" [level=3] [ref=f3e816]
+            - paragraph [ref=f3e817]:
+              - text: Periksa apakah kelas sudah dikunci. Jika perlu koreksi, minta Admin membuka kunci melalui
+              - strong [ref=f3e818]: Raport → Status Nilai → Detail
+              - text: .
+            - heading "Kelas tidak dapat dikunci" [level=3] [ref=f3e819]
+            - paragraph [ref=f3e820]:
+              - text: Buka detail pada
+              - strong [ref=f3e821]: Status Nilai
+              - text: dan baca daftar data yang belum lengkap. Biasanya penyebabnya adalah nilai salah satu mapel, penugasan Guru, presensi, kepribadian, atau catatan bilingual yang belum lengkap.
+            - heading "Raport atau leger belum dapat diunduh" [level=3] [ref=f3e822]
+            - paragraph [ref=f3e823]: Raport dan leger final memerlukan nilai kelas yang sudah dikunci. Lengkapi data lalu kunci kelas terlebih dahulu.
+            - heading "Import Excel gagal" [level=3] [ref=f3e824]
+            - list [ref=f3e825]:
+              - listitem [ref=f3e826]: Gunakan template terbaru dari aplikasi.
+              - listitem [ref=f3e827]:
+                - text: Gunakan format
+                - code [ref=f3e828]: .xlsx
+                - text: .
+              - listitem [ref=f3e829]: Isi mulai baris 5.
+              - listitem [ref=f3e830]: Jangan mengubah nama atau susunan kolom.
+              - listitem [ref=f3e831]: Periksa pesan kesalahan pada halaman preview.
+              - listitem [ref=f3e832]: Jika komponen nilai berubah, unduh ulang template nilai.
+            - heading "Tombol terjemahan otomatis tidak berfungsi" [level=3] [ref=f3e833]
+            - paragraph [ref=f3e834]: Isi kolom Arab secara manual dan minta penyedia aplikasi memeriksa API key, provider aktif, serta batas penggunaan karakter.
+            - heading "Data tidak boleh dihapus" [level=3] [ref=f3e835]
+            - paragraph [ref=f3e836]: Data yang sudah memiliki riwayat akademik sebaiknya tidak dihapus. Nonaktifkan Guru, mata pelajaran, ekstrakurikuler, atau kelas jika sudah tidak digunakan. Gunakan menu perpindahan, kenaikan, dan kelulusan untuk menjaga riwayat Santri.
+          - generic [ref=f3e837]:
+            - generic [ref=f3e838]: "24"
+            - heading "24. Checklist kerja" [level=2] [ref=f3e839]
+            - heading "Checklist awal penggunaan" [level=3] [ref=f3e840]
+            - list [ref=f3e841]:
+              - listitem [ref=f3e842]:
+                - generic [ref=f3e843] [cursor=pointer]:
+                  - checkbox "Admin berhasil login dan mengganti password." [ref=f3e844]
+                  - generic [ref=f3e845]: Admin berhasil login dan mengganti password.
+              - listitem [ref=f3e846]:
+                - generic [ref=f3e847] [cursor=pointer]:
+                  - checkbox "Profil dan logo pesantren sudah benar." [ref=f3e848]
+                  - generic [ref=f3e849]: Profil dan logo pesantren sudah benar.
+              - listitem [ref=f3e850]:
+                - generic [ref=f3e851] [cursor=pointer]:
+                  - checkbox "Label bahasa Arab sudah diperiksa." [ref=f3e852]
+                  - generic [ref=f3e853]: Label bahasa Arab sudah diperiksa.
+              - listitem [ref=f3e854]:
+                - generic [ref=f3e855] [cursor=pointer]:
+                  - checkbox "Tahun ajaran dan semester aktif sudah benar." [ref=f3e856]
+                  - generic [ref=f3e857]: Tahun ajaran dan semester aktif sudah benar.
+              - listitem [ref=f3e858]:
+                - generic [ref=f3e859] [cursor=pointer]:
+                  - checkbox "Data Guru sudah dimasukkan." [ref=f3e860]
+                  - generic [ref=f3e861]: Data Guru sudah dimasukkan.
+              - listitem [ref=f3e862]:
+                - generic [ref=f3e863] [cursor=pointer]:
+                  - checkbox "Data Santri sudah dimasukkan." [ref=f3e864]
+                  - generic [ref=f3e865]: Data Santri sudah dimasukkan.
+              - listitem [ref=f3e866]:
+                - generic [ref=f3e867] [cursor=pointer]:
+                  - checkbox "Mata pelajaran dan ekstrakurikuler sudah diperiksa." [ref=f3e868]
+                  - generic [ref=f3e869]: Mata pelajaran dan ekstrakurikuler sudah diperiksa.
+              - listitem [ref=f3e870]:
+                - generic [ref=f3e871] [cursor=pointer]:
+                  - checkbox "Kelas, wali kelas, dan anggota sudah ditentukan." [ref=f3e872]
+                  - generic [ref=f3e873]: Kelas, wali kelas, dan anggota sudah ditentukan.
+              - listitem [ref=f3e874]:
+                - generic [ref=f3e875] [cursor=pointer]:
+                  - checkbox "KKM setiap mata pelajaran sudah diatur." [ref=f3e876]
+                  - generic [ref=f3e877]: KKM setiap mata pelajaran sudah diatur.
+              - listitem [ref=f3e878]:
+                - generic [ref=f3e879] [cursor=pointer]:
+                  - checkbox "Guru pengampu sudah ditugaskan." [ref=f3e880]
+                  - generic [ref=f3e881]: Guru pengampu sudah ditugaskan.
+              - listitem [ref=f3e882]:
+                - generic [ref=f3e883] [cursor=pointer]:
+                  - checkbox "Akun Guru sudah dibagikan dengan aman." [ref=f3e884]
+                  - generic [ref=f3e885]: Akun Guru sudah dibagikan dengan aman.
+              - listitem [ref=f3e886]:
+                - generic [ref=f3e887] [cursor=pointer]:
+                  - checkbox "Backup awal sudah dibuat dan diunduh." [ref=f3e888]
+                  - generic [ref=f3e889]: Backup awal sudah dibuat dan diunduh.
+            - heading "Checklist sebelum mengunci nilai" [level=3] [ref=f3e890]
+            - list [ref=f3e891]:
+              - listitem [ref=f3e892]:
+                - generic [ref=f3e893] [cursor=pointer]:
+                  - checkbox "Nilai semua mata pelajaran sudah lengkap." [ref=f3e894]
+                  - generic [ref=f3e895]: Nilai semua mata pelajaran sudah lengkap.
+              - listitem [ref=f3e896]:
+                - generic [ref=f3e897] [cursor=pointer]:
+                  - checkbox "Nilai ekstrakurikuler sudah diisi jika ada." [ref=f3e898]
+                  - generic [ref=f3e899]: Nilai ekstrakurikuler sudah diisi jika ada.
+              - listitem [ref=f3e900]:
+                - generic [ref=f3e901] [cursor=pointer]:
+                  - checkbox "Presensi sudah lengkap." [ref=f3e902]
+                  - generic [ref=f3e903]: Presensi sudah lengkap.
+              - listitem [ref=f3e904]:
+                - generic [ref=f3e905] [cursor=pointer]:
+                  - checkbox "Nilai akhlak, kedisiplinan, dan kebersihan sudah lengkap." [ref=f3e906]
+                  - generic [ref=f3e907]: Nilai akhlak, kedisiplinan, dan kebersihan sudah lengkap.
+              - listitem [ref=f3e908]:
+                - generic [ref=f3e909] [cursor=pointer]:
+                  - checkbox "Catatan wali kelas Indonesia dan Arab sudah lengkap." [ref=f3e910]
+                  - generic [ref=f3e911]: Catatan wali kelas Indonesia dan Arab sudah lengkap.
+              - listitem [ref=f3e912]:
+                - generic [ref=f3e913] [cursor=pointer]:
+                  - checkbox "Identitas Santri sudah diperiksa." [ref=f3e914]
+                  - generic [ref=f3e915]: Identitas Santri sudah diperiksa.
+              - listitem [ref=f3e916]:
+                - generic [ref=f3e917] [cursor=pointer]:
+                  - checkbox "Nilai di bawah KKM sudah diperiksa." [ref=f3e918]
+                  - generic [ref=f3e919]: Nilai di bawah KKM sudah diperiksa.
+              - listitem [ref=f3e920]:
+                - generic [ref=f3e921] [cursor=pointer]:
+                  - checkbox "Backup terbaru sudah dibuat." [ref=f3e922]
+                  - generic [ref=f3e923]: Backup terbaru sudah dibuat.
+            - heading "Checklist sebelum mencetak" [level=3] [ref=f3e924]
+            - list [ref=f3e925]:
+              - listitem [ref=f3e926]:
+                - generic [ref=f3e927] [cursor=pointer]:
+                  - checkbox "Nilai kelas sudah dikunci." [ref=f3e928]
+                  - generic [ref=f3e929]: Nilai kelas sudah dikunci.
+              - listitem [ref=f3e930]:
+                - generic [ref=f3e931] [cursor=pointer]:
+                  - checkbox "Profil pesantren dan nama pimpinan sudah benar." [ref=f3e932]
+                  - generic [ref=f3e933]: Profil pesantren dan nama pimpinan sudah benar.
+              - listitem [ref=f3e934]:
+                - generic [ref=f3e935] [cursor=pointer]:
+                  - checkbox "Tempat dan tanggal cetak sudah benar." [ref=f3e936]
+                  - generic [ref=f3e937]: Tempat dan tanggal cetak sudah benar.
+              - listitem [ref=f3e938]:
+                - generic [ref=f3e939] [cursor=pointer]:
+                  - checkbox "Pratinjau raport sudah diperiksa." [ref=f3e940]
+                  - generic [ref=f3e941]: Pratinjau raport sudah diperiksa.
+              - listitem [ref=f3e942]:
+                - generic [ref=f3e943] [cursor=pointer]:
+                  - checkbox "Sampul dan biodata sudah diperiksa." [ref=f3e944]
+                  - generic [ref=f3e945]: Sampul dan biodata sudah diperiksa.
+              - listitem [ref=f3e946]:
+                - generic [ref=f3e947] [cursor=pointer]:
+                  - checkbox "PDF kelas sudah diunduh dan disimpan." [ref=f3e948]
+                  - generic [ref=f3e949]: PDF kelas sudah diunduh dan disimpan.
+            - heading "Checklist akhir tahun" [level=3] [ref=f3e950]
+            - list [ref=f3e951]:
+              - listitem [ref=f3e952]:
+                - generic [ref=f3e953] [cursor=pointer]:
+                  - checkbox "Raport dan leger sudah diunduh." [ref=f3e954]
+                  - generic [ref=f3e955]: Raport dan leger sudah diunduh.
+              - listitem [ref=f3e956]:
+                - generic [ref=f3e957] [cursor=pointer]:
+                  - checkbox "Backup akhir semester sudah dibuat." [ref=f3e958]
+                  - generic [ref=f3e959]: Backup akhir semester sudah dibuat.
+              - listitem [ref=f3e960]:
+                - generic [ref=f3e961] [cursor=pointer]:
+                  - checkbox "Seluruh kelas asal sudah dikunci." [ref=f3e962]
+                  - generic [ref=f3e963]: Seluruh kelas asal sudah dikunci.
+              - listitem [ref=f3e964]:
+                - generic [ref=f3e965] [cursor=pointer]:
+                  - checkbox "Tahun ajaran berikutnya dan Semester Ganjil sudah disiapkan." [ref=f3e966]
+                  - generic [ref=f3e967]: Tahun ajaran berikutnya dan Semester Ganjil sudah disiapkan.
+              - listitem [ref=f3e968]:
+                - generic [ref=f3e969] [cursor=pointer]:
+                  - checkbox "Kelas tujuan sudah dibuat." [ref=f3e970]
+                  - generic [ref=f3e971]: Kelas tujuan sudah dibuat.
+              - listitem [ref=f3e972]:
+                - generic [ref=f3e973] [cursor=pointer]:
+                  - checkbox "Kenaikan kelas sudah diproses satu kali." [ref=f3e974]
+                  - generic [ref=f3e975]: Kenaikan kelas sudah diproses satu kali.
+              - listitem [ref=f3e976]:
+                - generic [ref=f3e977] [cursor=pointer]:
+                  - checkbox "Kelulusan tingkat 6 sudah diproses." [ref=f3e978]
+                  - generic [ref=f3e979]: Kelulusan tingkat 6 sudah diproses.
+              - listitem [ref=f3e980]:
+                - generic [ref=f3e981] [cursor=pointer]:
+                  - checkbox "Data Alumni sudah diperiksa." [ref=f3e982]
+                  - generic [ref=f3e983]: Data Alumni sudah diperiksa.
+            - separator [ref=f3e984]
+            - paragraph [ref=f3e985]: Jika menemukan masalah yang tidak dijelaskan dalam panduan ini, catat nama menu, langkah yang dilakukan, dan pesan kesalahan yang tampil. Sertakan tangkapan layar saat menghubungi penyedia aplikasi agar masalah lebih cepat diperiksa.
+  - contentinfo [ref=f3e986]:
+    - strong [ref=f3e987]: Raport Digital Al-Yusriyah
+    - generic [ref=f3e988]: Panduan lokal · dapat dibuka tanpa internet
+    - link "Kembali ke atas ↑" [ref=f3e989] [cursor=pointer]:
+      - /url: "#top"

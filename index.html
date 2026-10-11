@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panduan lengkap penggunaan aplikasi Raport Digital Pondok Pesantren Al-Yusriyah.">
+  <title>Panduan Raport Digital Al-Yusriyah</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%230e633c%22/><text x=%2232%22 y=%2241%22 text-anchor=%22middle%22 font-size=%2226%22 fill=%22white%22>RD</text></svg>">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <button class="toc-toggle" id="toc-toggle" type="button" aria-label="Buka daftar isi" aria-controls="toc-drawer" aria-expanded="false">
+    <span class="toc-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="toc-toggle-label">Daftar isi</span>
+  </button>
+  <div class="toc-backdrop" id="toc-backdrop" aria-hidden="true"></div>
+  <aside class="toc-drawer" id="toc-drawer" aria-hidden="true" aria-labelledby="toc-drawer-title">
+    <div class="toc-drawer-header">
+      <div><span>Menu panduan</span><h2 id="toc-drawer-title">Daftar isi</h2></div>
+      <button class="toc-close" id="toc-close" type="button" aria-label="Tutup daftar isi">&times;</button>
+    </div>
+    <label class="toc-search-label" for="toc-search">Cari bab</label>
+    <input class="toc-search" id="toc-search" type="search" placeholder="Contoh: nilai atau backup" autocomplete="off">
+    <nav class="toc-drawer-nav" id="toc-drawer-nav" aria-label="Daftar isi cepat"></nav>
+    <p class="toc-empty" id="toc-empty" hidden>Bab tidak ditemukan.</p>
+    <div class="toc-drawer-footer">Pilih bab untuk langsung menuju bagian yang dibutuhkan.</div>
+  </aside>
+  <header class="hero">
+    <nav class="topbar" aria-label="Navigasi atas">
+      <a class="brand" href="#top"><span class="brand-mark">RD</span><span>Raport Digital<br><small>Panduan Pengguna</small></span></a>
+      <div class="top-actions"><a href="#alur-cepat">Mulai dari awal</a><button id="print-guide" type="button">Cetak panduan</button></div>
+    </nav>
+    <div class="hero-grid" id="top">
+      <div>
+        <span class="eyebrow">Pondok Pesantren Al-Yusriyah</span>
+        <h1>Kelola raport dengan langkah yang jelas.</h1>
+        <p>Dari login Admin, memasukkan Guru dan Santri, mengisi nilai sebagai Guru, sampai mengunci dan mengunduh rapor serta kartu.</p>
+        <div class="hero-actions"><a class="primary" href="#alur-cepat">Lihat alur kerja</a><a class="secondary" href="#panduan-lengkap">Buka panduan lengkap</a></div>
+      </div>
+      <aside class="hero-card">
+        <span>Urutan utama</span>
+        <ol><li>Siapkan lembaga</li><li>Masukkan data</li><li>Isi nilai</li><li>Periksa & kunci</li><li>Unduh PDF</li></ol>
+        <small>Hasil pengujian produksi · 2026/2027 Ganjil</small>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="quick-flow" id="alur-cepat">
+      <div class="section-heading"><span>Alur cepat</span><h2>Tujuh tahap dari kosong sampai rapor</h2><p>Ikuti urutan ini agar menu Guru dan dokumen cetak terisi dengan benar.</p></div>
+      <div class="flow-grid">
+        <article><b>01</b><h3>Profil & periode</h3><p>Lengkapi identitas pesantren, tahun ajaran, dan semester aktif.</p></article>
+        <article><b>02</b><h3>Guru & Santri</h3><p>Tambah manual atau gunakan template Excel dan periksa preview.</p></article>
+        <article><b>03</b><h3>Kelas & KKM</h3><p>Buat kelas, pilih wali, anggota, mata pelajaran, dan KKM.</p></article>
+        <article><b>04</b><h3>Guru pengampu</h3><p>Tentukan siapa yang mengisi setiap mata pelajaran.</p></article>
+        <article><b>05</b><h3>Pengisian Guru</h3><p>Isi nilai mapel, ekstrakurikuler, presensi, dan catatan wali.</p></article>
+        <article><b>06</b><h3>Periksa & kunci</h3><p>Admin memastikan semua bagian lengkap lalu mengunci kelas.</p></article>
+        <article><b>07</b><h3>Unduh hasil</h3><p>Pratinjau kemudian unduh rapor dan kartu dalam format PDF.</p></article>
+      </div>
+    </section>
+
+    <section class="evidence" id="contoh-tampilan">
+      <div class="section-heading"><span>Contoh nyata</span><h2>Tampilan dari pengujian produksi</h2><p>Gambar berikut diambil saat alur lengkap diuji langsung di aplikasi.</p></div>
+      <div class="shots">
+  <figure class="shot" data-file="01-dashboard-admin.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Dashboard Admin">
+      <img src="assets/images/01-dashboard-admin.png" alt="Dashboard Admin" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Dashboard Admin</strong><span>Titik awal untuk memantau Guru, Santri, kelas, periode, dan kelengkapan nilai.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="02-preview-import-guru.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Preview import Guru">
+      <img src="assets/images/02-preview-import-guru.png" alt="Preview import Guru" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Preview import Guru</strong><span>Periksa seluruh baris sebelum menyimpan hasil impor Excel.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="03-preview-import-santri.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Preview import Santri">
+      <img src="assets/images/03-preview-import-santri.png" alt="Preview import Santri" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Preview import Santri</strong><span>Validasi NISN dan identitas Santri sebelum data dimasukkan.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="04-kelas-berhasil.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Kelas berhasil dibuat">
+      <img src="assets/images/04-kelas-berhasil.png" alt="Kelas berhasil dibuat" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Kelas berhasil dibuat</strong><span>Pastikan wali kelas dan anggota kelas sudah sesuai.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="05-nilai-matematika.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Nilai Matematika">
+      <img src="assets/images/05-nilai-matematika.png" alt="Nilai Matematika" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Nilai Matematika</strong><span>Nilai harian, UAS, rata-rata, nilai akhir, dan status tuntas dihitung otomatis.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="06-nilai-nahwu.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Nilai Nahwu">
+      <img src="assets/images/06-nilai-nahwu.png" alt="Nilai Nahwu" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Nilai Nahwu</strong><span>Konfigurasi bobot dapat disesuaikan per mata pelajaran.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="07-ekstrakurikuler.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Nilai ekstrakurikuler">
+      <img src="assets/images/07-ekstrakurikuler.png" alt="Nilai ekstrakurikuler" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Nilai ekstrakurikuler</strong><span>Guru pembina dapat mengisi nilai A/B melalui formulir atau Excel.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="08-wali-kelas.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Data wali kelas">
+      <img src="assets/images/08-wali-kelas.png" alt="Data wali kelas" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Data wali kelas</strong><span>Lengkapi presensi, kepribadian, dan catatan sebelum penguncian.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="09-status-nilai.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Status nilai">
+      <img src="assets/images/09-status-nilai.png" alt="Status nilai" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Status nilai</strong><span>Admin memeriksa kelengkapan kelas sebelum mengunci nilai.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="10-cetak-raport.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Cetak rapor dan kartu">
+      <img src="assets/images/10-cetak-raport.png" alt="Cetak rapor dan kartu" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Cetak rapor dan kartu</strong><span>Pratinjau dokumen sebelum mengunduh PDF final.</span></figcaption>
+  </figure>
+
+  <figure class="shot" data-file="11-backup-manual.png">
+    <button class="shot-button" type="button" aria-label="Perbesar Backup manual">
+      <img src="assets/images/11-backup-manual.png" alt="Backup manual" loading="lazy" onerror="this.closest('figure').hidden=true">
+    </button>
+    <figcaption><strong>Backup manual</strong><span>Backup produksi berhasil dibuat dan dapat langsung diunduh tanpa Cron Job.</span></figcaption>
+  </figure></div>
+    </section>
+
+    <section class="uat-result" aria-labelledby="uat-result-title">
+      <div>
+        <span>Hasil akhir UAT</span>
+        <h2 id="uat-result-title">Raport dan kartu berhasil dicetak.</h2>
+        <p>Contoh PDF berikut berasal dari data uji produksi Ahmad Fadhil UAT. Gunakan sebagai pembanding saat melakukan pencetakan pertama.</p>
+      </div>
+      <div class="result-actions">
+        <a href="hasil-uat/raport-ahmad-fadhil-uat-produksi.pdf" target="_blank" rel="noopener">Buka contoh raport <b>PDF</b></a>
+        <a href="hasil-uat/kartu-ahmad-fadhil-uat-produksi.pdf" target="_blank" rel="noopener">Buka contoh kartu <b>PDF</b></a>
+      </div>
+    </section>
+
+    <section class="manual-shell" id="panduan-lengkap">
+      <aside class="sidebar">
+        <label for="guide-search">Cari panduan</label>
+        <input id="guide-search" type="search" placeholder="Contoh: tambah Guru">
+        <nav aria-label="Daftar isi panduan"><a href="#1-mengenal-akun-admin-dan-guru">1. Mengenal akun Admin dan Guru</a>
+<a href="#2-masuk-ke-aplikasi">2. Masuk ke aplikasi</a>
+<a href="#3-mengganti-password-dan-keluar">3. Mengganti password dan keluar</a>
+<a href="#4-urutan-penggunaan-dari-awal-sampai-akhir">4. Urutan penggunaan dari awal sampai akhir</a>
+<a href="#5-mengatur-profil-pesantren">5. Mengatur profil pesantren</a>
+<a href="#6-mengatur-bahasa-arab-dan-aplikasi">6. Mengatur bahasa Arab dan aplikasi</a>
+<a href="#7-membuka-tahun-ajaran-dan-semester">7. Membuka tahun ajaran dan semester</a>
+<a href="#8-mengelola-akun-admin-dan-pengumuman">8. Mengelola akun Admin dan pengumuman</a>
+<a href="#9-menambah-dan-mengelola-guru">9. Menambah dan mengelola Guru</a>
+<a href="#10-menambah-dan-mengelola-santri">10. Menambah dan mengelola Santri</a>
+<a href="#11-mengelola-mata-pelajaran">11. Mengelola mata pelajaran</a>
+<a href="#12-mengelola-ekstrakurikuler">12. Mengelola ekstrakurikuler</a>
+<a href="#13-membuat-kelas-dan-memasukkan-anggota">13. Membuat kelas dan memasukkan anggota</a>
+<a href="#14-mengatur-mata-pelajaran-dan-kkm-kelas">14. Mengatur mata pelajaran dan KKM kelas</a>
+<a href="#15-menentukan-guru-pengampu">15. Menentukan Guru pengampu</a>
+<a href="#16-panduan-guru-mengisi-nilai">16. Panduan Guru mengisi nilai</a>
+<a href="#17-panduan-guru-pembina-ekstrakurikuler">17. Panduan Guru pembina ekstrakurikuler</a>
+<a href="#18-panduan-guru-wali-kelas">18. Panduan Guru wali kelas</a>
+<a href="#19-memeriksa-dan-mengunci-nilai">19. Memeriksa dan mengunci nilai</a>
+<a href="#20-mengatur-dan-mengunduh-hasil-raport">20. Mengatur dan mengunduh hasil raport</a>
+<a href="#21-pindah-kelas-kenaikan-kelas-dan-alumni">21. Pindah kelas, kenaikan kelas, dan alumni</a>
+<a href="#22-backup-dan-pemulihan-data">22. Backup dan pemulihan data</a>
+<a href="#23-masalah-yang-sering-terjadi">23. Masalah yang sering terjadi</a>
+<a href="#24-checklist-kerja">24. Checklist kerja</a></nav>
+      </aside>
+      <article class="manual">
+        <div class="manual-intro"><span>Panduan lengkap</span><h2>Semua menu, dijelaskan dari awal sampai akhir</h2><p>Gunakan kolom pencarian atau pilih bab pada daftar isi. Checklist tersimpan di browser perangkat ini.</p></div>
+        <div id="guide-content"><p>Panduan ini ditujukan untuk pengelola pesantren, Admin, dan Guru yang menggunakan aplikasi Raport Digital. Ikuti urutan pada panduan ini agar data akademik tersusun dengan benar sejak awal sampai raport selesai dicetak.</p>
+<aside class="note"><strong>Catatan:</strong> Nama tombol dan menu dalam panduan ini sama dengan yang tampil di aplikasi. Tampilan pada telepon genggam mungkin lebih ringkas; tekan tombol menu di kiri atas untuk membuka navigasi.</aside>
+<section class="guide-section" id="1-mengenal-akun-admin-dan-guru"><div class="section-number">1</div>
+<h2 id="1-mengenal-akun-admin-dan-guru-title">1. Mengenal akun Admin dan Guru</h2>
+<p>Aplikasi memiliki dua jenis akun:</p>
+<div class="table-wrap"><table><thead><tr>
+<th>Jenis akun</th>
+<th>Tugas utama</th>
+</tr></thead><tbody>
+<tr>
+<td><strong>Admin</strong></td>
+<td>Mengatur profil pesantren, periode akademik, Guru, Santri, mata pelajaran, kelas, KKM, penugasan mengajar, penguncian nilai, pencetakan, akun Admin, dan backup.</td>
+</tr>
+<tr>
+<td><strong>Guru</strong></td>
+<td>Mengisi nilai mata pelajaran yang ditugaskan, nilai ekstrakurikuler jika menjadi pembina, data raport jika menjadi wali kelas, serta mencetak dokumen kelas yang dapat diakses.</td>
+</tr>
+</tbody></table></div>
+<p>Guru hanya dapat melihat kelas dan mata pelajaran yang telah diberikan oleh Admin. Guru tidak dapat membuat kelas, menambah Santri, atau menentukan penugasannya sendiri.</p>
+</section>
+<section class="guide-section" id="2-masuk-ke-aplikasi"><div class="section-number">2</div>
+<h2 id="2-masuk-ke-aplikasi-title">2. Masuk ke aplikasi</h2>
+<h3 id="login-admin-title">Login Admin</h3>
+<ol>
+<li>Buka alamat aplikasi yang diberikan oleh penyedia aplikasi.</li>
+<li>Pada halaman <strong>Masuk ke Panel</strong>, masukkan <strong>Username</strong> dan <strong>Password</strong> Admin.</li>
+<li>Centang <strong>Ingat saya pada perangkat ini</strong> hanya jika perangkat tersebut milik pribadi.</li>
+<li>Tekan <strong>Masuk ke Dashboard</strong>.</li>
+<li>Jika akun masih memakai password sementara, aplikasi akan langsung meminta penggantian password.</li>
+</ol>
+<p>Username dan password Admin pertama diberikan saat aplikasi dipasang. Jika lupa, hubungi penyedia aplikasi atau Admin lain yang masih dapat masuk.</p>
+<h3 id="login-guru-title">Login Guru</h3>
+<ol>
+<li>Admin membuat akun Guru terlebih dahulu melalui menu <strong>Guru → Data Guru</strong>.</li>
+<li>Guru membuka alamat aplikasi yang sama dengan Admin.</li>
+<li>Guru masuk memakai username dan password sementara yang diberikan Admin.</li>
+<li>Pada login pertama, Guru wajib membuat password baru.</li>
+<li>Setelah berhasil, Guru akan masuk ke <strong>Dashboard Guru</strong>.</li>
+</ol>
+<p>Jika Guru tidak dapat masuk, Admin perlu memeriksa apakah username benar dan status akun Guru masih <strong>Aktif</strong>.</p>
+</section>
+<section class="guide-section" id="3-mengganti-password-dan-keluar"><div class="section-number">3</div>
+<h2 id="3-mengganti-password-dan-keluar-title">3. Mengganti password dan keluar</h2>
+<h3 id="mengganti-password-pertama-kali-title">Mengganti password pertama kali</h3>
+<ol>
+<li>Masukkan <strong>Password saat ini</strong>.</li>
+<li>Masukkan <strong>Password baru</strong>.</li>
+<li>Ulangi password baru dengan tepat.</li>
+<li>Tekan <strong>Simpan Password</strong>.</li>
+</ol>
+<p>Password baru minimal 8 karakter dan harus berisi huruf besar, huruf kecil, serta angka.</p>
+<h3 id="mengganti-password-setelah-masuk-title">Mengganti password setelah masuk</h3>
+<ol>
+<li>Tekan nama pengguna di kanan atas.</li>
+<li>Pilih <strong>Ganti Password</strong>.</li>
+<li>Isi password lama dan password baru.</li>
+<li>Simpan perubahan.</li>
+</ol>
+<h3 id="keluar-dari-aplikasi-title">Keluar dari aplikasi</h3>
+<ol>
+<li>Tekan nama pengguna di kanan atas.</li>
+<li>Pilih <strong>Keluar</strong>.</li>
+</ol>
+<p>Selalu keluar dari aplikasi setelah selesai memakai komputer bersama.</p>
+</section>
+<section class="guide-section" id="4-urutan-penggunaan-dari-awal-sampai-akhir"><div class="section-number">4</div>
+<h2 id="4-urutan-penggunaan-dari-awal-sampai-akhir-title">4. Urutan penggunaan dari awal sampai akhir</h2>
+<p>Gunakan urutan berikut saat aplikasi baru mulai dipakai:</p>
+<ol>
+<li>Admin login dan mengganti password sementara.</li>
+<li>Admin melengkapi <strong>Profil Pesantren</strong>.</li>
+<li>Admin memeriksa pengaturan bahasa Arab pada menu <strong>Aplikasi</strong>.</li>
+<li>Admin membuka <strong>Tahun Ajaran</strong> dan mengaktifkan semester.</li>
+<li>Admin menambahkan <strong>Guru</strong>, <strong>Santri</strong>, dan <strong>Mata Pelajaran</strong>.</li>
+<li>Admin menambahkan <strong>Ekstrakurikuler</strong> beserta Guru pembina.</li>
+<li>Admin membuat <strong>Kelas</strong>, memilih wali kelas, dan memasukkan anggota kelas.</li>
+<li>Admin memilih mata pelajaran setiap kelas dan menetapkan <strong>KKM</strong>.</li>
+<li>Admin menentukan <strong>Guru Pengampu</strong>.</li>
+<li>Guru login dan mengisi nilai mata pelajaran.</li>
+<li>Guru pembina mengisi nilai ekstrakurikuler.</li>
+<li>Wali kelas mengisi presensi, kepribadian, dan catatan raport.</li>
+<li>Admin memeriksa kelengkapan pada menu <strong>Status Nilai</strong>.</li>
+<li>Admin mengunci nilai kelas.</li>
+<li>Admin atau Guru membuka <strong>Cetak Raport</strong>, melakukan pratinjau, lalu mengunduh PDF.</li>
+<li>Pada akhir tahun, Admin memproses kenaikan kelas atau kelulusan.</li>
+<li>Admin membuat dan mengunduh backup secara rutin.</li>
+</ol>
+<p>Jangan melompati pengaturan periode, kelas, KKM, atau penugasan Guru. Menu Guru akan kosong jika bagian tersebut belum disiapkan.</p>
+</section>
+<section class="guide-section" id="5-mengatur-profil-pesantren"><div class="section-number">5</div>
+<h2 id="5-mengatur-profil-pesantren-title">5. Mengatur profil pesantren</h2>
+<p>Profil pesantren dipakai pada sampul, biodata, raport, dan dokumen lainnya.</p>
+<ol>
+<li>Login sebagai Admin.</li>
+<li>Buka menu <strong>Profil Pesantren</strong>.</li>
+<li>Unggah logo pesantren jika diperlukan. Format yang diterima adalah PNG, JPG, atau WebP dengan ukuran maksimal 2 MB.</li>
+<li>Lengkapi data berikut:</li>
+<p>- Nama pesantren dalam bahasa Indonesia dan Arab. - NSPP. - Alamat, desa/kelurahan, kecamatan, kabupaten/kota, provinsi, dan kode pos. - Nama pimpinan dalam bahasa Indonesia dan Arab. - Nomor telepon, email, dan situs web.</p>
+<li>Periksa bagian <strong>Pratinjau Identitas Dokumen</strong>.</li>
+<li>Tekan <strong>Simpan Profil</strong>.</li>
+</ol>
+<p>Jika tombol <strong>Isi otomatis</strong> atau <strong>Terjemahkan</strong> tersedia, hasilnya tetap harus diperiksa. Nama orang, nama daerah, dan istilah khusus pesantren dapat memerlukan koreksi manual.</p>
+</section>
+<section class="guide-section" id="6-mengatur-bahasa-arab-dan-aplikasi"><div class="section-number">6</div>
+<h2 id="6-mengatur-bahasa-arab-dan-aplikasi-title">6. Mengatur bahasa Arab dan aplikasi</h2>
+<ol>
+<li>Buka menu <strong>Aplikasi</strong>.</li>
+<li>Pilih penyedia penerjemah yang telah disiapkan pada server.</li>
+<li>Aktifkan <strong>Terjemahan otomatis</strong> hanya jika status menunjukkan kredensial siap.</li>
+<li>Atur batas penggunaan karakter sesuai kebutuhan.</li>
+<li>Periksa <strong>Label Statis Indonesia — Arab</strong> satu per satu.</li>
+<li>Perbaiki tulisan Arab jika hasil otomatis kurang tepat.</li>
+<li>Tekan <strong>Simpan Pengaturan</strong>.</li>
+</ol>
+<p>Jika API penerjemah belum tersedia, aplikasi tetap dapat digunakan. Isi kolom Arab secara manual.</p>
+</section>
+<section class="guide-section" id="7-membuka-tahun-ajaran-dan-semester"><div class="section-number">7</div>
+<h2 id="7-membuka-tahun-ajaran-dan-semester-title">7. Membuka tahun ajaran dan semester</h2>
+<ol>
+<li>Buka <strong>Lembaga → Pengaturan</strong>.</li>
+<li>Tekan <strong>Buka Tahun Ajaran Baru</strong>.</li>
+<li>Masukkan tahun mulai, tanggal mulai, dan tanggal selesai.</li>
+<li>Pastikan rentang tanggal sudah benar.</li>
+<li>Tekan <strong>Buka Tahun Ajaran</strong>.</li>
+</ol>
+<p>Saat tahun ajaran baru dibuat, <strong>Semester Ganjil</strong> otomatis menjadi aktif. Data tahun ajaran lama tidak dihapus dan tetap dapat dilihat sebagai riwayat.</p>
+<h3 id="mengaktifkan-semester-genap-title">Mengaktifkan Semester Genap</h3>
+<ol>
+<li>Buka <strong>Lembaga → Pengaturan</strong>.</li>
+<li>Cari tahun ajaran yang sedang berjalan.</li>
+<li>Pada kolom <strong>Semester Genap</strong>, tekan <strong>Aktifkan</strong>.</li>
+<li>Setujui konfirmasi.</li>
+</ol>
+<p>Semester aktif menjadi acuan untuk kelas, anggota kelas, pengisian nilai, wali kelas, dan pencetakan. Pastikan semester yang tampil di bagian atas aplikasi sudah benar sebelum memasukkan data.</p>
+</section>
+<section class="guide-section" id="8-mengelola-akun-admin-dan-pengumuman"><div class="section-number">8</div>
+<h2 id="8-mengelola-akun-admin-dan-pengumuman-title">8. Mengelola akun Admin dan pengumuman</h2>
+<h3 id="menambah-admin-lain-title">Menambah Admin lain</h3>
+<ol>
+<li>Buka menu <strong>Admin Aplikasi</strong>.</li>
+<li>Isi nama lengkap dan username.</li>
+<li>Buat password sementara minimal 12 karakter yang berisi huruf dan angka.</li>
+<li>Ulangi password.</li>
+<li>Pastikan <strong>Akun aktif</strong> dicentang.</li>
+<li>Tekan <strong>Tambah Admin</strong>.</li>
+<li>Berikan username dan password sementara kepada Admin tersebut secara aman.</li>
+</ol>
+<p>Admin baru wajib mengganti password pada login pertama. Pada halaman yang sama, Admin dapat memperbarui nama, username, status akun, atau memberikan password sementara baru.</p>
+<h3 id="membuat-pengumuman-title">Membuat pengumuman</h3>
+<ol>
+<li>Buka <strong>Dashboard Admin</strong>.</li>
+<li>Pada bagian <strong>Info / Pengumuman</strong>, tekan <strong>Kelola pengumuman</strong>.</li>
+<li>Isi judul dan isi pengumuman.</li>
+<li>Atur tanggal mulai dan selesai tayang jika diperlukan.</li>
+<li>Aktifkan <strong>Langsung aktif</strong>.</li>
+<li>Tekan <strong>Tambahkan</strong>.</li>
+</ol>
+<p>Pengumuman aktif akan terlihat di Dashboard Admin dan Guru.</p>
+</section>
+<section class="guide-section" id="9-menambah-dan-mengelola-guru"><div class="section-number">9</div>
+<h2 id="9-menambah-dan-mengelola-guru-title">9. Menambah dan mengelola Guru</h2>
+<h3 id="menambah-satu-guru-title">Menambah satu Guru</h3>
+<ol>
+<li>Buka <strong>Guru → Data Guru</strong>.</li>
+<li>Tekan <strong>Tambah Guru</strong>.</li>
+<li>Isi nama Indonesia, nama Arab jika ada, username, dan NIP.</li>
+<li>Buat password sementara minimal 12 karakter yang berisi huruf dan angka.</li>
+<li>Ulangi password sementara.</li>
+<li>Lengkapi jenis kelamin, tempat dan tanggal lahir, telepon, email, serta alamat.</li>
+<li>Pastikan <strong>Akun dan data Guru aktif</strong> dicentang.</li>
+<li>Tekan <strong>Tambah Guru</strong>.</li>
+<li>Berikan username dan password sementara kepada Guru.</li>
+</ol>
+<p>Username setiap Guru harus berbeda. NIP juga tidak boleh sama jika diisi.</p>
+<h3 id="mengubah-data-atau-mereset-password-guru-title">Mengubah data atau mereset password Guru</h3>
+<ol>
+<li>Buka <strong>Guru → Data Guru</strong>.</li>
+<li>Cari nama atau username Guru.</li>
+<li>Tekan tombol <strong>Edit</strong>.</li>
+<li>Perbaiki data yang diperlukan.</li>
+<li>Untuk mereset password, isi <strong>Password sementara baru</strong> dan ulangi password. Jika tidak ingin mengganti password, biarkan kolom tersebut kosong.</li>
+<li>Tekan <strong>Simpan Perubahan</strong>.</li>
+</ol>
+<p>Setelah password direset, Guru wajib menggantinya ketika login berikutnya.</p>
+<h3 id="menonaktifkan-guru-title">Menonaktifkan Guru</h3>
+<p>Edit data Guru lalu matikan pilihan <strong>Akun dan data Guru aktif</strong>. Guru yang nonaktif tidak dapat login dan tidak dapat dipilih pada penugasan baru.</p>
+<p>Lebih aman menonaktifkan Guru yang sudah memiliki riwayat daripada menghapusnya.</p>
+<h3 id="menambah-banyak-guru-dengan-excel-title">Menambah banyak Guru dengan Excel</h3>
+<ol>
+<li>Buka <strong>Guru → Data Guru</strong>.</li>
+<li>Pada bagian <strong>Import Excel</strong>, tekan <strong>Download Template</strong>.</li>
+<li>Isi data mulai dari baris 5 tanpa mengubah judul kolom.</li>
+<li>Simpan dalam format <code>.xlsx</code>.</li>
+<li>Tekan <strong>Pilih Excel</strong>, pilih berkas, lalu tekan <strong>Preview Import</strong>.</li>
+<li>Periksa jumlah baris valid dan baris bermasalah.</li>
+<li>Jika ada kesalahan, perbaiki berkas lalu unggah ulang.</li>
+<li>Jika seluruh data valid, tekan <strong>Simpan Hasil Import</strong>.</li>
+</ol>
+<p>Data belum masuk ke aplikasi hanya dengan membuka preview. Penyimpanan baru dilakukan setelah tombol <strong>Simpan Hasil Import</strong> ditekan.</p>
+</section>
+<section class="guide-section" id="10-menambah-dan-mengelola-santri"><div class="section-number">10</div>
+<h2 id="10-menambah-dan-mengelola-santri-title">10. Menambah dan mengelola Santri</h2>
+<h3 id="menambah-satu-santri-title">Menambah satu Santri</h3>
+<ol>
+<li>Buka <strong>Santri → Data Santri</strong>.</li>
+<li>Tekan <strong>Tambah Santri</strong>.</li>
+<li>Unggah foto jika ada. Format foto adalah JPG, PNG, atau WebP dengan ukuran maksimal 2 MB.</li>
+<li>Isi NISN sebanyak 10 digit.</li>
+<li>Isi nama, jenis kelamin, tempat lahir, tanggal lahir, dan status.</li>
+<li>Lengkapi nama ayah, nama ibu, serta alamat.</li>
+<li>Isi versi bahasa Arab jika diperlukan.</li>
+<li>Tekan <strong>Tambah Santri</strong>.</li>
+</ol>
+<p>NISN harus unik. Pastikan nama, tanggal lahir, dan data orang tua benar karena data tersebut dipakai pada biodata dan raport.</p>
+<h3 id="mengubah-data-santri-title">Mengubah data Santri</h3>
+<ol>
+<li>Buka <strong>Santri → Data Santri</strong>.</li>
+<li>Cari berdasarkan nama atau NISN.</li>
+<li>Tekan <strong>Edit</strong>.</li>
+<li>Perbaiki data atau ganti foto.</li>
+<li>Tekan <strong>Simpan Perubahan</strong>.</li>
+</ol>
+<h3 id="menambah-banyak-santri-dengan-excel-title">Menambah banyak Santri dengan Excel</h3>
+<ol>
+<li>Buka <strong>Santri → Data Santri</strong>.</li>
+<li>Tekan <strong>Download Template</strong> pada bagian <strong>Import Excel</strong>.</li>
+<li>Isi data mulai baris 5 tanpa mengubah judul kolom.</li>
+<li>Simpan sebagai <code>.xlsx</code>.</li>
+<li>Pilih berkas lalu tekan <strong>Preview Import</strong>.</li>
+<li>Perbaiki semua baris yang ditandai bermasalah.</li>
+<li>Setelah seluruh baris valid, tekan <strong>Simpan Hasil Import</strong>.</li>
+</ol>
+<p>Import bersifat menyeluruh: jika masih ada baris bermasalah, tidak ada data yang disimpan.</p>
+</section>
+<section class="guide-section" id="11-mengelola-mata-pelajaran"><div class="section-number">11</div>
+<h2 id="11-mengelola-mata-pelajaran-title">11. Mengelola mata pelajaran</h2>
+<ol>
+<li>Buka <strong>Lembaga → Mata Pelajaran</strong>.</li>
+<li>Periksa mata pelajaran yang sudah tersedia sebelum menambah data baru.</li>
+<li>Untuk menambah, tekan <strong>Tambah Mata Pelajaran</strong>.</li>
+<li>Isi kode, nomor urut, nama Indonesia, dan nama Arab.</li>
+<li>Pilih kelompok <strong>Pondok</strong> atau <strong>Umum</strong>.</li>
+<li>Pilih tipe ujian. Jika memilih ujian lisan, tentukan kelompok ujian lisan.</li>
+<li>Pastikan status mata pelajaran aktif.</li>
+<li>Tekan <strong>Tambah Mata Pelajaran</strong>.</li>
+</ol>
+<p>Nomor urut menentukan susunan mata pelajaran pada daftar dan dokumen. Mata pelajaran kelompok Umum otomatis memakai tipe ujian <strong>Tidak berlaku</strong>.</p>
+<p>Untuk menambah banyak mata pelajaran, gunakan <strong>Download Template</strong>, isi berkas Excel, buka <strong>Preview Import</strong>, perbaiki kesalahan, lalu tekan <strong>Simpan Hasil Import</strong>.</p>
+</section>
+<section class="guide-section" id="12-mengelola-ekstrakurikuler"><div class="section-number">12</div>
+<h2 id="12-mengelola-ekstrakurikuler-title">12. Mengelola ekstrakurikuler</h2>
+<ol>
+<li>Buka <strong>Raport → Ekstrakurikuler</strong>.</li>
+<li>Tekan <strong>Tambah Ekstrakurikuler</strong>.</li>
+<li>Isi nama Indonesia dan nama Arab jika ada.</li>
+<li>Pilih <strong>Guru pembina</strong> dari Guru yang aktif.</li>
+<li>Isi deskripsi jika diperlukan.</li>
+<li>Aktifkan kegiatan.</li>
+<li>Tekan <strong>Tambah Ekstrakurikuler</strong>.</li>
+</ol>
+<p>Guru pembina akan melihat kegiatan tersebut pada menu <strong>Ekstrakurikuler</strong> di akun Guru. Penilaian dapat dilakukan untuk kelas aktif yang dipilih Guru.</p>
+</section>
+<section class="guide-section" id="13-membuat-kelas-dan-memasukkan-anggota"><div class="section-number">13</div>
+<h2 id="13-membuat-kelas-dan-memasukkan-anggota-title">13. Membuat kelas dan memasukkan anggota</h2>
+<p>Sebelum membuat kelas, pastikan tahun ajaran, semester, Guru, dan Santri sudah tersedia.</p>
+<ol>
+<li>Buka <strong>Lembaga → Kelas</strong>.</li>
+<li>Pilih tahun ajaran dan semester yang benar.</li>
+<li>Tekan <strong>Tambah Kelas</strong>.</li>
+<li>Isi nama kelas, misalnya <code>Kelas 1A</code>.</li>
+<li>Pilih tingkat 1 sampai 6.</li>
+<li>Pilih wali kelas dari Guru aktif.</li>
+<li>Pastikan kelas berstatus aktif.</li>
+<li>Pada bagian <strong>Anggota Kelas</strong>, cari lalu centang Santri yang akan dimasukkan.</li>
+<li>Tekan <strong>Buat Kelas</strong>.</li>
+</ol>
+<p>Satu Santri hanya dapat menjadi anggota satu kelas aktif pada semester yang sama.</p>
+<p>Saat mengedit kelas, anggota aktif tidak dapat dikeluarkan hanya dengan menghapus centang. Gunakan menu <strong>Santri → Pindah Kelas</strong> agar riwayat akademik tetap tersimpan.</p>
+</section>
+<section class="guide-section" id="14-mengatur-mata-pelajaran-dan-kkm-kelas"><div class="section-number">14</div>
+<h2 id="14-mengatur-mata-pelajaran-dan-kkm-kelas-title">14. Mengatur mata pelajaran dan KKM kelas</h2>
+<ol>
+<li>Buka <strong>Raport → Nilai KKM</strong>.</li>
+<li>Pilih tahun ajaran, semester, dan kelas.</li>
+<li>Tekan <strong>Tampilkan</strong>.</li>
+<li>Centang mata pelajaran yang berlaku untuk kelas tersebut.</li>
+<li>Isi nilai KKM antara 0 sampai 100 untuk setiap mata pelajaran yang dipilih.</li>
+<li>Tekan <strong>Simpan Mapel &amp; KKM</strong>.</li>
+</ol>
+<p>Nilai desimal diperbolehkan, misalnya <code>72,50</code>. Lakukan langkah ini untuk setiap kelas.</p>
+</section>
+<section class="guide-section" id="15-menentukan-guru-pengampu"><div class="section-number">15</div>
+<h2 id="15-menentukan-guru-pengampu-title">15. Menentukan Guru pengampu</h2>
+<ol>
+<li>Buka <strong>Guru → Mengajar</strong>.</li>
+<li>Pilih tahun ajaran, semester, dan kelas.</li>
+<li>Tekan <strong>Tampilkan</strong>.</li>
+<li>Pada setiap mata pelajaran, pilih Guru pengampu.</li>
+<li>Tekan <strong>Simpan Penugasan</strong>.</li>
+</ol>
+<p>Setelah penugasan tersimpan, mata pelajaran dan kelas akan muncul di akun Guru terkait.</p>
+<p>Jika beberapa kelas memakai susunan yang sama, gunakan <strong>Salin Konfigurasi</strong>. Fitur ini menyalin mata pelajaran, KKM, dan Guru pengampu dari kelas sumber ke kelas tujuan. Nilai Santri tidak ikut disalin.</p>
+</section>
+<section class="guide-section" id="16-panduan-guru-mengisi-nilai"><div class="section-number">16</div>
+<h2 id="16-panduan-guru-mengisi-nilai-title">16. Panduan Guru mengisi nilai</h2>
+<h3 id="membuka-tugas-mengajar-title">Membuka tugas mengajar</h3>
+<ol>
+<li>Login menggunakan akun Guru.</li>
+<li>Buka menu <strong>Pengisian Nilai</strong>.</li>
+<li>Pilih kelas dan mata pelajaran.</li>
+<li>Tekan <strong>Isi Nilai</strong>.</li>
+</ol>
+<p>Jika daftar kosong, Guru perlu meminta Admin memeriksa semester aktif, KKM kelas, status Guru, dan penugasan mengajar.</p>
+<h3 id="mengatur-perhitungan-nilai-title">Mengatur perhitungan nilai</h3>
+<ol>
+<li>Pada bagian <strong>Konfigurasi Perhitungan</strong>, isi bobot Harian dan UAS.</li>
+<li>Jumlah kedua bobot harus tepat 100%.</li>
+<li>Tambahkan nama komponen nilai harian, misalnya <code>NH1</code>, <code>Tugas</code>, atau <code>Praktik</code>.</li>
+<li>Minimal ada satu komponen dan maksimal 20 komponen.</li>
+<li>Tekan <strong>Simpan Konfigurasi</strong>.</li>
+</ol>
+<p>Mengubah konfigurasi akan menghitung ulang nilai yang sudah tersimpan. Unduh ulang template Excel setelah komponen nilai diubah.</p>
+<h3 id="mengisi-nilai-secara-manual-title">Mengisi nilai secara manual</h3>
+<ol>
+<li>Masukkan nilai setiap komponen pada rentang 0 sampai 100.</li>
+<li>Masukkan nilai UAS pada rentang 0 sampai 100.</li>
+<li>Periksa rata-rata, nilai akhir, dan status ketuntasan yang dihitung otomatis.</li>
+<li>Tekan <strong>Simpan Semua Nilai</strong>.</li>
+</ol>
+<p>Nilai di bawah KKM akan ditandai. Pastikan seluruh Santri memiliki nilai akhir sebelum kelas dikunci.</p>
+<h3 id="mengisi-nilai-dengan-excel-title">Mengisi nilai dengan Excel</h3>
+<ol>
+<li>Atur dan simpan komponen nilai terlebih dahulu.</li>
+<li>Tekan <strong>Download Template</strong>.</li>
+<li>Isi nilai pada berkas tanpa mengubah NISN, nama Santri, atau judul kolom.</li>
+<li>Simpan sebagai <code>.xlsx</code>.</li>
+<li>Tekan <strong>Pilih Excel</strong>, lalu <strong>Preview Import</strong>.</li>
+<li>Periksa hasil validasi.</li>
+<li>Jika tidak ada kesalahan, tekan <strong>Simpan Hasil Import</strong>.</li>
+</ol>
+<p>Baris tanpa nilai akan diabaikan saat preview. Jika konfigurasi komponen berubah, unduh template baru.</p>
+</section>
+<section class="guide-section" id="17-panduan-guru-pembina-ekstrakurikuler"><div class="section-number">17</div>
+<h2 id="17-panduan-guru-pembina-ekstrakurikuler-title">17. Panduan Guru pembina ekstrakurikuler</h2>
+<ol>
+<li>Login sebagai Guru pembina.</li>
+<li>Buka menu <strong>Ekstrakurikuler</strong>.</li>
+<li>Pilih kegiatan dan kelas.</li>
+<li>Pilih nilai:</li>
+<p>- <strong>A</strong> untuk Santri yang aktif. - <strong>B</strong> untuk Santri yang kurang aktif. - Kosongkan jika Santri tidak mengikuti kegiatan.</p>
+<li>Tekan <strong>Simpan Nilai Ekstrakurikuler</strong>.</li>
+</ol>
+<p>Nilai kosong tidak ditampilkan pada raport. Pengisian massal juga dapat dilakukan melalui <strong>Download Template</strong>, <strong>Preview Import</strong>, dan <strong>Simpan Hasil Import</strong>.</p>
+</section>
+<section class="guide-section" id="18-panduan-guru-wali-kelas"><div class="section-number">18</div>
+<h2 id="18-panduan-guru-wali-kelas-title">18. Panduan Guru wali kelas</h2>
+<ol>
+<li>Login sebagai Guru yang telah ditetapkan sebagai wali kelas.</li>
+<li>Buka menu <strong>Wali Kelas</strong>.</li>
+<li>Isi jumlah <strong>Sakit</strong>, <strong>Izin</strong>, dan <strong>Alpa</strong> untuk setiap Santri.</li>
+<li>Pilih nilai <strong>Akhlak</strong>, <strong>Kedisiplinan</strong>, dan <strong>Kebersihan</strong> dari A sampai E.</li>
+<li>Isi <strong>Catatan Indonesia</strong>.</li>
+<li>Isi <strong>Catatan Arab</strong>.</li>
+<li>Tekan <strong>Simpan Data Wali Kelas</strong>.</li>
+<li>Tekan <strong>Lihat Status Kelas</strong> untuk memeriksa progres seluruh Guru.</li>
+</ol>
+<p>Catatan Indonesia dan Arab wajib lengkap sebelum Admin dapat mengunci nilai. Setelah kelas dikunci, data hanya dapat dilihat sampai Admin membuka kunci kembali.</p>
+</section>
+<section class="guide-section" id="19-memeriksa-dan-mengunci-nilai"><div class="section-number">19</div>
+<h2 id="19-memeriksa-dan-mengunci-nilai-title">19. Memeriksa dan mengunci nilai</h2>
+<p>Penguncian dilakukan oleh Admin setelah seluruh pengisian selesai.</p>
+<ol>
+<li>Buka <strong>Raport → Status Nilai</strong>.</li>
+<li>Periksa persentase setiap kelas.</li>
+<li>Tekan <strong>Detail</strong> pada kelas yang akan diperiksa.</li>
+<li>Periksa bagian yang belum lengkap.</li>
+<li>Minta Guru pengampu atau wali kelas melengkapi data jika masih ada kekurangan.</li>
+<li>Jika seluruh data sudah lengkap, tekan <strong>Kunci Nilai Kelas</strong>.</li>
+<li>Setujui konfirmasi.</li>
+</ol>
+<p>Kelas hanya dapat dikunci jika:</p>
+<ul>
+<li>Memiliki Santri aktif.</li>
+<li>Memiliki mata pelajaran aktif.</li>
+<li>Setiap mata pelajaran memiliki Guru pengampu.</li>
+<li>Nilai akhir seluruh Santri sudah tersedia pada setiap mata pelajaran.</li>
+<li>Wali kelas sudah ditentukan.</li>
+<li>Presensi seluruh Santri sudah tersimpan.</li>
+<li>Nilai kepribadian seluruh Santri sudah lengkap.</li>
+<li>Catatan wali kelas dalam bahasa Indonesia dan Arab sudah lengkap.</li>
+</ul>
+<p>Setelah dikunci, Guru tidak dapat mengubah nilai mata pelajaran, nilai ekstrakurikuler, atau data wali kelas. Jika ada kesalahan, Admin dapat membuka halaman detail lalu menekan <strong>Buka Kunci Nilai</strong>. Setelah koreksi selesai, kunci kembali kelas tersebut.</p>
+</section>
+<section class="guide-section" id="20-mengatur-dan-mengunduh-hasil-raport"><div class="section-number">20</div>
+<h2 id="20-mengatur-dan-mengunduh-hasil-raport-title">20. Mengatur dan mengunduh hasil raport</h2>
+<h3 id="mengatur-hasil-cetak-title">Mengatur hasil cetak</h3>
+<ol>
+<li>Login sebagai Admin.</li>
+<li>Buka <strong>Raport → Pengaturan Cetak</strong>.</li>
+<li>Isi tempat cetak.</li>
+<li>Isi tanggal cetak tetap atau kosongkan agar sistem memakai tanggal saat dokumen dibuat.</li>
+<li>Atur penyesuaian kalender Hijriah antara -3 sampai 3 hari jika diperlukan.</li>
+<li>Atur format nama berkas/footer. Placeholder yang tersedia adalah <code>{nama}</code>, <code>{nisn}</code>, <code>{kelas}</code>, <code>{semester}</code>, dan <code>{tahun_ajaran}</code>.</li>
+<li>Periksa ukuran kartu Santri. Ukuran baku adalah 85,60 × 53,98 mm.</li>
+<li>Tekan <strong>Simpan Pengaturan</strong>.</li>
+</ol>
+<h3 id="pratinjau-dan-unduh-pdf-title">Pratinjau dan unduh PDF</h3>
+<ol>
+<li>Buka menu <strong>Cetak Raport</strong>.</li>
+<li>Pilih semester dan kelas.</li>
+<li>Periksa jumlah Santri dan status penguncian.</li>
+<li>Pilih <strong>Pratinjau</strong> untuk memeriksa tampilan di tab baru.</li>
+<li>Pilih tombol unduh untuk menyimpan PDF.</li>
+</ol>
+<p>Dokumen yang tersedia:</p>
+<ul>
+<li><strong>Raport</strong> per Santri atau satu kelas.</li>
+<li><strong>Sampul</strong> per Santri atau satu kelas.</li>
+<li><strong>Biodata</strong> per Santri atau satu kelas.</li>
+<li><strong>Kartu Santri</strong> per Santri atau satu kelas.</li>
+<li><strong>Leger Nilai</strong> satu kelas.</li>
+</ul>
+<p>Raport dan leger final hanya dapat diunduh setelah nilai kelas dikunci. Sampul, biodata, dan kartu dapat diperiksa sebelum nilai dikunci.</p>
+<p>Berkas PDF biasanya masuk ke folder unduhan browser. Buka PDF dan periksa nama pesantren, identitas Santri, nilai, tanda tangan, tanggal, serta pemisahan halaman sebelum dicetak.</p>
+<h3 id="mengganti-kode-qr-kartu-title">Mengganti kode QR kartu</h3>
+<p>Pada daftar dokumen per Santri, Admin dapat memilih <strong>Ganti QR</strong>. Gunakan hanya jika kode lama perlu dibatalkan karena kartu hilang atau diganti. Setelah kode diperbarui, QR pada kartu lama tidak berlaku.</p>
+</section>
+<section class="guide-section" id="21-pindah-kelas-kenaikan-kelas-dan-alumni"><div class="section-number">21</div>
+<h2 id="21-pindah-kelas-kenaikan-kelas-dan-alumni-title">21. Pindah kelas, kenaikan kelas, dan alumni</h2>
+<h3 id="memindahkan-santri-pada-semester-aktif-title">Memindahkan Santri pada semester aktif</h3>
+<ol>
+<li>Buka <strong>Santri → Pindah Kelas</strong>.</li>
+<li>Cari Santri berdasarkan nama, NISN, atau kelas asal.</li>
+<li>Tekan <strong>Pilih</strong>.</li>
+<li>Pilih kelas tujuan.</li>
+<li>Isi alasan perpindahan minimal 5 karakter.</li>
+<li>Tekan <strong>Simpan Perpindahan</strong>.</li>
+</ol>
+<p>Kelas asal, nilai, dan jejak perubahan tetap tersimpan. Nilai kelas yang sudah dikunci tidak dapat dipindahkan.</p>
+<h3 id="melihat-riwayat-santri-title">Melihat riwayat Santri</h3>
+<ol>
+<li>Buka <strong>Santri → Riwayat Santri</strong>.</li>
+<li>Cari nama atau NISN.</li>
+<li>Tekan <strong>Lihat</strong>.</li>
+</ol>
+<p>Halaman ini menampilkan kelas, semester, perpindahan, kenaikan, dan kelulusan tanpa mengubah data lama.</p>
+<h3 id="memproses-kenaikan-kelas-title">Memproses kenaikan kelas</h3>
+<p>Kenaikan dilakukan dari Semester Genap yang nilainya sudah dikunci.</p>
+<ol>
+<li>Pastikan nilai kelas asal sudah dikunci.</li>
+<li>Buka tahun ajaran berikutnya dan aktifkan Semester Ganjil.</li>
+<li>Buat kelas tujuan pada tingkat berikutnya.</li>
+<li>Buka <strong>Santri → Naik Kelas</strong>.</li>
+<li>Pilih semester asal dan kelas asal.</li>
+<li>Pilih kelas tujuan.</li>
+<li>Centang Santri yang naik kelas.</li>
+<li>Isi catatan proses jika diperlukan.</li>
+<li>Tekan <strong>Proses Kenaikan</strong> dan setujui konfirmasi.</li>
+</ol>
+<p>Santri tingkat 1 sampai 5 naik satu tingkat. Proses ini menyimpan riwayat permanen dan tidak boleh dijalankan dua kali untuk data yang sama.</p>
+<h3 id="memproses-kelulusan-title">Memproses kelulusan</h3>
+<ol>
+<li>Pilih kelas tingkat 6 pada menu <strong>Naik Kelas</strong>.</li>
+<li>Pastikan nilai Semester Genap sudah dikunci.</li>
+<li>Centang Santri yang dinyatakan lulus.</li>
+<li>Isi catatan kelulusan jika diperlukan.</li>
+<li>Tekan <strong>Proses Kelulusan</strong>.</li>
+</ol>
+<p>Santri yang lulus otomatis masuk ke menu <strong>Santri → Data Alumni</strong>.</p>
+</section>
+<section class="guide-section" id="22-backup-dan-pemulihan-data"><div class="section-number">22</div>
+<h2 id="22-backup-dan-pemulihan-data-title">22. Backup dan pemulihan data</h2>
+<h3 id="membuat-backup-manual-title">Membuat backup manual</h3>
+<p>Lakukan backup sebelum perubahan besar, sebelum kenaikan kelas, dan secara rutin.</p>
+<ol>
+<li>Buka <strong>Backup &amp; Restore</strong>.</li>
+<li>Tekan <strong>Buat &amp; Unduh Backup</strong>.</li>
+<li>Tunggu sampai berkas ZIP selesai diunduh.</li>
+<li>Simpan salinan di tempat lain, misalnya komputer kantor atau penyimpanan awan yang aman.</li>
+<li>Periksa riwayat backup dan pastikan statusnya <strong>Selesai</strong>.</li>
+</ol>
+<p>Paket backup berisi data aplikasi, unggahan, dan <code>database.sql</code> untuk pemulihan darurat.</p>
+<h3 id="mengatur-backup-otomatis-title">Mengatur backup otomatis</h3>
+<ol>
+<li>Buka <strong>Backup &amp; Restore</strong>.</li>
+<li>Aktifkan <strong>Backup otomatis</strong>.</li>
+<li>Pilih frekuensi harian atau mingguan.</li>
+<li>Pilih hari dan jam.</li>
+<li>Atur jumlah backup yang dipertahankan.</li>
+<li>Tekan <strong>Simpan Pengaturan</strong>.</li>
+</ol>
+<p>Backup otomatis membutuhkan Cron yang aktif pada hosting. Minta penyedia aplikasi memeriksanya jika backup terjadwal tidak berjalan.</p>
+<h3 id="memulihkan-data-dari-backup-title">Memulihkan data dari backup</h3>
+<aside class="note"><strong>Peringatan:</strong> Restore mengganti data aktif dengan isi backup. Jangan melakukan restore hanya untuk mencoba.</aside>
+<ol>
+<li>Buat dan unduh backup terbaru sebelum memulai.</li>
+<li>Pada bagian <strong>Restore dari paket backup</strong>, pilih berkas ZIP.</li>
+<li>Tekan <strong>Periksa Berkas</strong>.</li>
+<li>Periksa tanggal, jumlah tabel, jumlah data, dan status checksum.</li>
+<li>Masukkan password Admin saat ini.</li>
+<li>Ketik <code>PULIHKAN DATA</code> sesuai petunjuk.</li>
+<li>Tekan <strong>Buat Pengaman &amp; Mulai Restore</strong>.</li>
+</ol>
+<p>Gunakan paket backup dari aplikasi yang sama. Jika muncul pesan tentang kunci aplikasi atau paket tidak valid, jangan melanjutkan dan hubungi penyedia aplikasi.</p>
+</section>
+<section class="guide-section" id="23-masalah-yang-sering-terjadi"><div class="section-number">23</div>
+<h2 id="23-masalah-yang-sering-terjadi-title">23. Masalah yang sering terjadi</h2>
+<h3 id="guru-tidak-dapat-login-title">Guru tidak dapat login</h3>
+<ul>
+<li>Pastikan username dan password benar.</li>
+<li>Pastikan akun Guru berstatus aktif.</li>
+<li>Jika lupa password, Admin membuka <strong>Guru → Data Guru → Edit</strong>, lalu membuat password sementara baru.</li>
+</ul>
+<h3 id="menu-pengisian-nilai-guru-kosong-title">Menu Pengisian Nilai Guru kosong</h3>
+<ul>
+<li>Pastikan semester yang benar sedang aktif.</li>
+<li>Pastikan kelas berstatus aktif.</li>
+<li>Pastikan mata pelajaran dan KKM sudah diterapkan pada kelas.</li>
+<li>Pastikan Admin sudah menentukan Guru pengampu.</li>
+</ul>
+<h3 id="menu-wali-kelas-kosong-title">Menu Wali Kelas kosong</h3>
+<p>Admin harus menetapkan Guru sebagai wali kelas pada <strong>Lembaga → Kelas</strong>.</p>
+<h3 id="menu-ekstrakurikuler-guru-kosong-title">Menu Ekstrakurikuler Guru kosong</h3>
+<p>Admin harus memilih Guru tersebut sebagai pembina pada <strong>Raport → Ekstrakurikuler</strong> dan memastikan kegiatan berstatus aktif.</p>
+<h3 id="nilai-tidak-dapat-diubah-title">Nilai tidak dapat diubah</h3>
+<p>Periksa apakah kelas sudah dikunci. Jika perlu koreksi, minta Admin membuka kunci melalui <strong>Raport → Status Nilai → Detail</strong>.</p>
+<h3 id="kelas-tidak-dapat-dikunci-title">Kelas tidak dapat dikunci</h3>
+<p>Buka detail pada <strong>Status Nilai</strong> dan baca daftar data yang belum lengkap. Biasanya penyebabnya adalah nilai salah satu mapel, penugasan Guru, presensi, kepribadian, atau catatan bilingual yang belum lengkap.</p>
+<h3 id="raport-atau-leger-belum-dapat-diunduh-title">Raport atau leger belum dapat diunduh</h3>
+<p>Raport dan leger final memerlukan nilai kelas yang sudah dikunci. Lengkapi data lalu kunci kelas terlebih dahulu.</p>
+<h3 id="import-excel-gagal-title">Import Excel gagal</h3>
+<ul>
+<li>Gunakan template terbaru dari aplikasi.</li>
+<li>Gunakan format <code>.xlsx</code>.</li>
+<li>Isi mulai baris 5.</li>
+<li>Jangan mengubah nama atau susunan kolom.</li>
+<li>Periksa pesan kesalahan pada halaman preview.</li>
+<li>Jika komponen nilai berubah, unduh ulang template nilai.</li>
+</ul>
+<h3 id="tombol-terjemahan-otomatis-tidak-berfungsi-title">Tombol terjemahan otomatis tidak berfungsi</h3>
+<p>Isi kolom Arab secara manual dan minta penyedia aplikasi memeriksa API key, provider aktif, serta batas penggunaan karakter.</p>
+<h3 id="data-tidak-boleh-dihapus-title">Data tidak boleh dihapus</h3>
+<p>Data yang sudah memiliki riwayat akademik sebaiknya tidak dihapus. Nonaktifkan Guru, mata pelajaran, ekstrakurikuler, atau kelas jika sudah tidak digunakan. Gunakan menu perpindahan, kenaikan, dan kelulusan untuk menjaga riwayat Santri.</p>
+</section>
+<section class="guide-section" id="24-checklist-kerja"><div class="section-number">24</div>
+<h2 id="24-checklist-kerja-title">24. Checklist kerja</h2>
+<h3 id="checklist-awal-penggunaan-title">Checklist awal penggunaan</h3>
+<ul class="checklist">
+<li><label><input type="checkbox"> <span>Admin berhasil login dan mengganti password.</span></label></li>
+<li><label><input type="checkbox"> <span>Profil dan logo pesantren sudah benar.</span></label></li>
+<li><label><input type="checkbox"> <span>Label bahasa Arab sudah diperiksa.</span></label></li>
+<li><label><input type="checkbox"> <span>Tahun ajaran dan semester aktif sudah benar.</span></label></li>
+<li><label><input type="checkbox"> <span>Data Guru sudah dimasukkan.</span></label></li>
+<li><label><input type="checkbox"> <span>Data Santri sudah dimasukkan.</span></label></li>
+<li><label><input type="checkbox"> <span>Mata pelajaran dan ekstrakurikuler sudah diperiksa.</span></label></li>
+<li><label><input type="checkbox"> <span>Kelas, wali kelas, dan anggota sudah ditentukan.</span></label></li>
+<li><label><input type="checkbox"> <span>KKM setiap mata pelajaran sudah diatur.</span></label></li>
+<li><label><input type="checkbox"> <span>Guru pengampu sudah ditugaskan.</span></label></li>
+<li><label><input type="checkbox"> <span>Akun Guru sudah dibagikan dengan aman.</span></label></li>
+<li><label><input type="checkbox"> <span>Backup awal sudah dibuat dan diunduh.</span></label></li>
+</ul>
+<h3 id="checklist-sebelum-mengunci-nilai-title">Checklist sebelum mengunci nilai</h3>
+<ul class="checklist">
+<li><label><input type="checkbox"> <span>Nilai semua mata pelajaran sudah lengkap.</span></label></li>
+<li><label><input type="checkbox"> <span>Nilai ekstrakurikuler sudah diisi jika ada.</span></label></li>
+<li><label><input type="checkbox"> <span>Presensi sudah lengkap.</span></label></li>
+<li><label><input type="checkbox"> <span>Nilai akhlak, kedisiplinan, dan kebersihan sudah lengkap.</span></label></li>
+<li><label><input type="checkbox"> <span>Catatan wali kelas Indonesia dan Arab sudah lengkap.</span></label></li>
+<li><label><input type="checkbox"> <span>Identitas Santri sudah diperiksa.</span></label></li>
+<li><label><input type="checkbox"> <span>Nilai di bawah KKM sudah diperiksa.</span></label></li>
+<li><label><input type="checkbox"> <span>Backup terbaru sudah dibuat.</span></label></li>
+</ul>
+<h3 id="checklist-sebelum-mencetak-title">Checklist sebelum mencetak</h3>
+<ul class="checklist">
+<li><label><input type="checkbox"> <span>Nilai kelas sudah dikunci.</span></label></li>
+<li><label><input type="checkbox"> <span>Profil pesantren dan nama pimpinan sudah benar.</span></label></li>
+<li><label><input type="checkbox"> <span>Tempat dan tanggal cetak sudah benar.</span></label></li>
+<li><label><input type="checkbox"> <span>Pratinjau raport sudah diperiksa.</span></label></li>
+<li><label><input type="checkbox"> <span>Sampul dan biodata sudah diperiksa.</span></label></li>
+<li><label><input type="checkbox"> <span>PDF kelas sudah diunduh dan disimpan.</span></label></li>
+</ul>
+<h3 id="checklist-akhir-tahun-title">Checklist akhir tahun</h3>
+<ul class="checklist">
+<li><label><input type="checkbox"> <span>Raport dan leger sudah diunduh.</span></label></li>
+<li><label><input type="checkbox"> <span>Backup akhir semester sudah dibuat.</span></label></li>
+<li><label><input type="checkbox"> <span>Seluruh kelas asal sudah dikunci.</span></label></li>
+<li><label><input type="checkbox"> <span>Tahun ajaran berikutnya dan Semester Ganjil sudah disiapkan.</span></label></li>
+<li><label><input type="checkbox"> <span>Kelas tujuan sudah dibuat.</span></label></li>
+<li><label><input type="checkbox"> <span>Kenaikan kelas sudah diproses satu kali.</span></label></li>
+<li><label><input type="checkbox"> <span>Kelulusan tingkat 6 sudah diproses.</span></label></li>
+<li><label><input type="checkbox"> <span>Data Alumni sudah diperiksa.</span></label></li>
+</ul>
+<hr>
+<p>Jika menemukan masalah yang tidak dijelaskan dalam panduan ini, catat nama menu, langkah yang dilakukan, dan pesan kesalahan yang tampil. Sertakan tangkapan layar saat menghubungi penyedia aplikasi agar masalah lebih cepat diperiksa.</p>
+</section></div>
+        <div id="no-results" hidden><h3>Tidak ada hasil</h3><p>Coba kata lain, misalnya “nilai”, “kelas”, “Guru”, atau “backup”.</p></div>
+      </article>
+    </section>
+  </main>
+
+  <footer><strong>Raport Digital Al-Yusriyah</strong><span>Panduan lokal · dapat dibuka tanpa internet</span><a href="#top">Kembali ke atas ↑</a></footer>
+  <dialog id="lightbox"><button type="button" aria-label="Tutup">×</button><img alt="Pratinjau tampilan aplikasi"></dialog>
+  <script src="assets/app.js"></script>
+</body>
+</html>

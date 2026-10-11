@@ -1,0 +1,1 @@
+[      91ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ http://127.0.0.1:8765/assets/app.js:0
